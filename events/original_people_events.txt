@@ -83,7 +83,7 @@ country_event = {
 	immediate = {
 		# Notify players
 		
-		every_country = {
+		every_playable_country = {
 			limit = {
 				is_ai = no
 				has_valid_civic = civic_original_people
@@ -154,7 +154,7 @@ country_event = {
 	immediate = {
 		# Notify players
 		country_event = { id = fallen_empires_awakening.3 }
-		every_country = {
+		every_playable_country = {
 			limit = {
 				is_ai = no		
 			}
@@ -173,8 +173,10 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		is_country_type = awakened_fallen_empire
-		NOT = { has_ethic = ethic_gestalt_consciousness }
-		NOT = { has_country_flag = wrath_of_the_ancients }
+		NOR = {
+			has_ethic = ethic_gestalt_consciousness
+			has_country_flag = wrath_of_the_ancients
+		}
 		is_at_war = no
 		any_country = {
 			is_country_type = ascended_empire

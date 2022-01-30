@@ -23,10 +23,12 @@ country_event = {
 	trigger = {
 		is_country_type = fallen_empire
 		is_at_war = no
-		NOT = { has_country_flag = fallen_empire_lost_war }
-		NOT = { has_country_flag = fallen_empire_sent_warning }
+		NOR = {
+			has_country_flag = fallen_empire_lost_war
+			has_country_flag = fallen_empire_sent_warning
+		}
 		fleet_power > 20000
-		any_country = {
+		any_playable_country = {
 			is_country_type = default
 			has_communications = root
 			root = { opinion = { who = prev value < -99 } }
@@ -105,8 +107,10 @@ country_event = {
 			# Demand - prostrate yourself, mere mortal!				
 			if = {
 				limit = {
-					NOT = { has_modifier = humiliated } 
-					NOT = { has_valid_civic = civic_original_people }
+					NOR = {
+						has_modifier = humiliated
+						has_valid_civic = civic_original_people
+					}
 				}
 				country_event = { id = fallen_empires.8 }
 				break = yes
