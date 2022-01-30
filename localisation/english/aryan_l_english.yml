@@ -1,0 +1,54 @@
+﻿l_english:
+
+
+civic_original_people:0 "Original People"
+civic_original_people_desc:0 "Unbeknownst to the Fallen Empires during the great war, remnants of the Original Empire escaped extinction and survived. Having lost everything, they have rebuilt their civilization from the ashes of their past.\n\n§RDue to their dark history, Fallen Empires will always dislike the Original People.§!"
+
+civic_tooltip_original_people_effects:3 "Gain the §Y$trait_punctual$§! trait, granting:\n  Resources from £job£ Jobs: §G+10%§!"
+
+retains_original_people:0 "§HRetains Civic:§! $civic_original_people$\n\n"
+
+trait_punctual:0 "Punctual"
+trait_punctual_desc:0 "§LMembers of this species are always punctual, leading to increased productivity.§!"
+
+opinion_original_people:0 "Original People"
+
+opinion_shadows_of_the_original_empire:0 "Shadows of the Original Empire"
+
+ORIGINAL:0 "Original"
+aryan_01:0 "Aryan"
+
+original_people.1.desc:0 "Foolish [Root.GetSpeciesName]. The lack of respect you show for your betters will be your undoing. Prostrate yourselves before us and beg our forgiveness, and we MAY refrain from annihilating your worthless empire."
+
+original_people.3.desc:0 "The Original Empire was corrupt. §HYou§! are corrupt. Spirits demand there must be balance, and we shall obey."
+original_people.3.desc.b:0 "The [Root.GetSpeciesNamePlural] continue to astound us with their refusal to accept reality, that we all learned everything from you, became better than you, and destroyed you. Coming back was the last mistake the [Root.GetSpeciesNamePlural] will ever make."
+original_people.3.desc.c:0 "For all your power, your troubled past, and all the sufferings you have caused, you have learned nothing. The oppression of the Original Empire will never return, and we will make sure of it."
+original_people.3.desc.d:0 "Original scum. We will finish the job our ancestors started, and wipe every stinking [Root.GetSpeciesName] from the face of this galaxy."
+original_people.3.a:0 "So be it."
+
+
+01_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_GREETING:0 "Perhaps there is a reason why your kind yet lives, [From.GetSpeciesName]."
+02_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_GREETING:0 "How the mighty have fallen, to see [From.GetSpeciesNamePlural] travel in such crude metal husks."
+03_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_GREETING:0 "We didn't forget, [From.GetSpeciesNamePlural]. You will do well to learn from mistakes of the past."
+04_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_GREETING:0 "So the Original Empire still lives. Hard to know why our ancestors didn't finish the job."
+
+01_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_GREETING:0 "Atone for your sins, [From.GetSpeciesNamePlural]. Perhaps there shall be salvation for you after all."
+02_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_GREETING:0 "Hard to believe we were once servants to you. Not so scary now, are you?"
+03_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_GREETING:0 "I am glad the [From.GetSpeciesNamePlural] are not extinct. Look at you! So cute! You will make a fine addition to our pleasure palace."
+04_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_GREETING:0 "Perhaps [From.GetSpeciesNamePlural] are not entirely useless. Maybe you will make good slaves...yes, to repair the damage you have caused all those centuries ago."
+
+01_ORIGINAL_FALLEN_EMPIRE_ANGRY_GREETING:0 "Perhaps it's in your nature. You never changed, [From.GetSpeciesNamePlural]."
+02_ORIGINAL_FALLEN_EMPIRE_ANGRY_GREETING:0 "Never forget the lessons of history, [From.GetSpeciesNamePlural]. We've put you down once, we can do so again."
+03_ORIGINAL_FALLEN_EMPIRE_ANGRY_GREETING:0 "What have they taught you in schools on [From.Capital.GetName]? Clearly you don't know your own history and are doomed to repeat it."
+04_ORIGINAL_FALLEN_EMPIRE_ANGRY_GREETING:0 "The only good [From.GetSpeciesName] is a dead [From.GetSpeciesName]."
+
+01_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_WAR_GREETING:0 "History repeats itself. We will gladly remind you how that went last time."
+02_ORIGINAL_FALLEN_EMPIRE_DISMISSIVE_WAR_GREETING:0 "You must be punished."
+01_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_WAR_GREETING:0 "This is for the greater good of the galaxy."
+02_ORIGINAL_FALLEN_EMPIRE_PATRONIZING_WAR_GREETING:0 "Never again."
+01_ORIGINAL_FALLEN_EMPIRE_ANGRY_WAR_GREETING:0 "Have you learned nothing from your dark history, [From.GetSpeciesName]?"
+02_ORIGINAL_FALLEN_EMPIRE_ANGRY_WAR_GREETING:0 "[From.Capital.GetName] shall burn. We will see to it that the Original Empire can never return."
+
+START_SCREEN_POST_ORIGINAL_PEOPLE:0 "For centuries, [GetAdj] scientists knew the first [GetSpeciesNamePlural] did not in fact evolve from the biosphere of [GetHomeWorldName], and there were simply no records of [GetSpeciesName] existence until thousands of years ago. This led to a popular theory - that [GetSpeciesNamePlural] perhaps originated from a once great spacefaring empire.\n\nBut if we were already a spacefaring civilization at some point, why did the first [GetSpeciesName] colonists inherit none of the advanced technologies, and why were we left here and seemingly forgotten? Where did [GetSpeciesNamePlural] come from and what happened to the others? Why did our ancestors make no mention of their past?\n\nIn recent years, [GetRulerTitle] [GetRulerName] has risen to power with thunderous applause, promising to look to the stars and find the answers to the mysterious [GetAdj] past once and for all."
+
+EMPIRE_DESIGN_Aryan_Republic_desc:0 "For generations, the Aryans have lived on the idyllic countryside of their homeworld, eating sausages, and built a pacifistic society that championed freedom, individual rights and scientific progress - if only to develop more efficient ways of making and eating sausages.\n\nTheir love for rules and beer largely prevented the society from asking too many questions, specifically, their true origins or their distant past, of which no records can be found anywhere on the planet. For historians, perhaps the answers can only be found among the stars, and the secrets to their past will at last be unveiled. Or perhaps it's just time for one more beer."

@@ -1,0 +1,101 @@
+﻿l_english:
+
+d_ancestor_ruins:0 "Ancient Ruins"
+d_ancestor_ruins_desc:0 "These ruins look ancient, their origins a mystery."
+
+d_ancestor_mineral_vault:0 "Ancient Mineral Vault"
+d_ancestor_mineral_vault_desc:0 "Scanners detect a large amount of minerals hidden beneath the surface."
+
+d_ancestor_ship_graveyard:0 "Ancient Starship Graveyard"
+d_ancestor_ship_graveyard_desc:0 "Remnants of what seem to be ancient starships scatter across the surface."
+
+
+beacon_of_infinity_system_initializer_NAME:0 "Beacon of Infinity"
+beacon_of_infinity_system_initializer_DESC:0 "Ringworld start (4) on a yellow star, with 1 Ringworld (1) neighbor and 1 broken Ringworld."
+
+broken_ringworld_system_initializer_NAME:0 "Broken Ringworld"
+broken_ringworld_system_initializer_DESC:0 "Ringworld start (1) on a random star."
+
+deutschland_system_system_initializer_NAME:0 "Deutschland"
+deutschland_system_system_initializer_DESC:0 "Ringworld start (8) on a yellow star, with 1 Ringworld (2) neighbor and a ruined Ringworld."
+
+dystopia_system_system_initializer_NAME:0 "Dystopia"
+dystopia_system_system_initializer_DESC:0 "OP Ringworld start (1) on a red star with a ruined Dyson sphere, with 1 neighbor of ruined sentry array and science nexus, and 2 ruined Dyson Ringworlds."
+
+eternal_system_system_initializer_NAME:0 "Light of Eternity"
+eternal_system_system_initializer_DESC:0 "Ringworld start (4) on a neutron star, with 1 Ringworld (4) neighbor and 1 ruined Ringworld."
+
+fynri_system_system_initializer_NAME:0 "Garden of Serenity"
+fynri_system_system_initializer_DESC:0 "OP Ringworld start (4) on a neutron star, with 1 Ringworld (1) neighbor, and a ruined Ringworld."
+
+immortal_system_system_initializer_NAME:0 "Throne of Immortality"
+immortal_system_system_initializer_DESC:0 "Ringworld start (4) on a pulsar, with 1 Ringworld (4) neighbor and 1 ruined Ringworld."
+
+infinity_system_system_initializer_NAME:0 "Forge of Infinity"
+infinity_system_system_initializer_DESC:0 "Ringworld start (4) on a black hole, with 1 Ringworld (4) neighbor and 1 ruined Ringworld."
+
+random_ringworld_system_initializer_NAME:0 "Random Ringworld"
+random_ringworld_system_initializer_DESC:0 "Ringworld start (4) on a random star."
+
+random_rich_ringworld_system_initializer_NAME:0 "Random Rich Ringworld"
+random_rich_ringworld_system_initializer_DESC:0 "Rich Ringworld start (4) on a random star."
+
+random_op_ringworld_system_initializer_NAME:0 "Random OP Ringworld"
+random_op_ringworld_system_initializer_DESC:0 "OP Ringworld start (4) on a random star."
+
+shadow_system_system_initializer_NAME:0 "Shadowland"
+shadow_system_system_initializer_DESC:0 "OP Ringworld start (4) on a black hole, with 1 ruined Science Nexus Ringworld neighbor, and 1 black hole neighbor."
+
+utopia_system_initializer_NAME:0 "Utopia"
+utopia_system_initializer_DESC:0 "Ringworld start (8) on a blue star."
+
+massive_ringworld_system_initializer_NAME:0 "Massive Ringworld"
+massive_ringworld_system_initializer_DESC:0 "Ringworld start (8) on a random star, with 2 Ringworlds (8) on random stars."
+
+ringworld_empire.1.name:0 "Discovery on [Root.GetName]"
+ringworld_empire.1.desc:0 "Sensors report some unusual metallic readings from an unexplored area on §H[Root.GetName]§!. Upon some digging in the zone, our team made a discovery. Remnants of ancient warships lay buried here, yet for some unknown reason, they seemed strangely familiar. A team of archaeologists soon joined the investigation and disturbingly, these designs match the primitive drawings made by our §H[Root.Owner.GetSpeciesAdj]§! ancestors. How can this be? These ships predate our earliest records of §H[Root.Owner.GetSpeciesAdj]§! history, when spaceflight should have been impossible.\n\nWhile biologists look uncomfortable revising existing theories on §H[Root.Owner.GetSpeciesAdj]§! evolution, physicists and engineers are excited by the technologies found on these ships. The weaponry are beyond our current understanding of physics, and the way these ships were assembled and made capable of spaceflight seems well beyond our experience in engineering. To settle this once and for all, our top scientists proposed a restoration project to determine if these machines were actually capable of spaceflight. This would require significant resources, of course.\n\nWho were our ancestors? Who built the massive structure on which we live? These shipwrecks seem to hold all the answers to our past."
+ringworld_empire.1.a:0 "Can we get them flying again somehow?"
+ringworld_empire.1.b:0 "Scrap them for metals."
+ringworld_empire.1.c:0 "Study their technology."
+ringworld_empire.1.d:0 "Leave them alone. Ancient history is irrelevant."
+
+ringworld_empire.2.name:0 "Ancient Ships Repaired"
+ringworld_empire.2.desc:0 "It started to hum. It was faint at first, like an echo coming from our distant yet mysterious past. But then the engine roared to life, awakening a warship that was thought long-dead. Weapons, life-support, hyperdrive, all came online, announced by the ship's AI in ancient §H[Root.Owner.GetSpeciesAdj]§! dialect. It is buried and forgotten no more.\n\nWe managed to reactivate a few more ships this way, and our admirals could not be more excited to get their hands on these ships and see them in action. However, our scientists warned against reverse-engineering any of the ships' technology, or install our own modifications, as their workings are still not understood by modern science. 'I don't know how, but it works and it doesn't explode,' one engineer said grumpily. 'So don't ruin it.'\n\nIt is now increasingly evident that we did not descend from primitives like we thought. Our real ancestors before those primitives possessed technologies far beyond our own, and it would not be above them to construct the Ringworld on which we now live. Some archaeologists suggest we were once a significant power in the galaxy, yet for some reason our ancestors lost everything and became the primitives we knew. But how?\n\nIntentionally or not, our ancestors have left us these warships to find. Was it a mistake, or were they hoping that future generations would one day reclaim their rightful place in the galaxy? Had they discovered some unspeakable horror, or encountered enemies so numerous, that they abandoned their empire out of self-preservation? Whatever the answer, it seems we are about to discover it for ourselves all over again."
+ringworld_empire.2.a:0 "Get these ships to orbit!"
+
+ringworld_empire.3.name:0 "The Enemy Revealed"
+ringworld_empire.3.desc:0 "Among the heavily encrypted files stored upon our ancestor's warships, is a constant reference to §HThe Enemy§!. Recent upgrades in translation software allow us to discover our ancestors' world and the Great Crusade which turned civilizations to dust. The earliest reference of §HThe Enemy§! seemed no more than animosity towards a rival. Throughout the next centuries, the rivalry deepened and this nation was simply referred to as §HThe Enemy§!.\n\nIt began with proxy-wars. Their subject empires, eager to gain favor with their Overlord, skirmished against subject nations of their master's rival, testing their strengths and their enemy's resolve. As each ascendancy geared for war with fanatical citizens rallying behind them, little did they know of the war that would turn to hell. We now know the §HColossus World Destroyer§! was one of such weapons first deployed during the Great Crusade. Another of such weapon deployed by our ancestor's rival, code-named 'Nemesis', was destroyed in battle and its wrecks was salvaged by our ancestors for study.\n\nThe whereabouts of Nemesis is top-secret, but after years of investigation we were able to locate this hidden facility on §H[Root.GetName]§!. Scientists request permission to restore this weapon like we did with our ancestor's warships."
+ringworld_empire.3.a:0 "We can give it a try."
+ringworld_empire.3.b:0 "No. Scrap it for metals."
+ringworld_empire.3.c:0 "Study its technology only."
+ringworld_empire.3.d:0 "Leave it alone. This weapon is too dangerous."
+
+ringworld_empire.4.name:0 "Nemesis Repaired"
+ringworld_empire.4.desc:0 "As Nemesis soared to the skies of §H[Root.GetName]§!, our scientists couldn't help but wonder if this had been our ancestors' plan after all. Nemesis was salvaged not only with the aim to study their enemy's weakness, but it was clear our ancestors had wanted it to fly once more under their banner. Still wearing proudly the insignia of this Enemy, Nemesis would have jumped out of hyperspace right behind enemy fleets, blasting them with its weapons, and shocking Enemy admirals that they were being blasted by one of their own ships. At least, that was our ancestor's idea of revenge.\n\nAt some point, this restoration project was abandoned. Our ancestors presumably lost the war and became the primitives we know in §H[Root.Owner.GetSpeciesAdj]§! history. One has to wonder though, if they hadn't lost the war, where would we be now? More importantly, what happened to §HThe Enemy§! who banished our ancestors? Are they still out there somewhere in this galaxy? If so, do they still look upon us with disdain, or would they welcome us back with open arms?"
+ringworld_empire.4.a:0 "I guess we will find out."
+
+ringworld_empire.5.name:0 "New Ringworld Designs"
+ringworld_empire.5.desc:0 "Since our ascension, our architects have been hard at work designing a new look for our ringworlds. These designs are now ready. Perhaps it is time our ringworlds receive a makeover?"
+ringworld_empire.5.a:0 "Do it."
+ringworld_empire.5.b:0 "Use it for future constructions."
+
+ringworld_empire.6.name:0 "Dark Matter Power?"
+ringworld_empire.6.desc:0 "After years of research, our scientists have finally concluded that the power source which flies our Ancestors' ships is in fact, a form of dark matter that distorts gravity so predictably that it can be refined into fuel. In fact, some scientists even believe a whole civilization can be founded upon this single power source - the implications of this is just unfathomable.\n\nRight now, we can only theorize other potential applications of this technology. If we research this power source, surely it would bring us one step closer to the level of our Ancestors several millennia ago."
+ringworld_empire.6.a:0 "Begin research immediately!"
+ringworld_empire.6.b:0 "What's this? Scrap this stuff. Minerals win wars."
+ringworld_empire.6.c:0 "Theorize, but don't do anything stupid, OK?"
+ringworld_empire.6.d:0 "Maybe some secrets are best left buried..."
+
+RINGWORLD_FLEET:0 "Repairing Ancient Ships"
+RINGWORLD_FLEET_DESC:0 "These ships look old...really old. Their designs do not however, seem to be alien of origin. The inscriptions found on these ghastly husks share uncanny resemblances to the ancient texts currently on display in our national museum, yet our ancestors are not imagined to be capable of spaceflight.\n\nIt will take time to study the ships' operations while ensuring they do not accidentally explode on the touch of a wrong button."
+
+RINGWORLD_TITAN:0 "Ancestor's Nemesis"
+RINGWORLD_TITAN_DESC:0 "Fortunately, our ancestors have done most of the translation and documented the workings of 'Nemesis' quite extensively in their ancient tongue. We can attempt to restore power to 'Nemesis' if we invest significant resources to the project.\n\nAs always, precaution and plenty of time will be taken in order to ensure this thing does not accidentally explode."
+
+
+
+
+
+
+
+

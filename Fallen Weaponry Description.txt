@@ -1,0 +1,56 @@
+[i]Among the wreckages of the now Forgotten Empire, traces of the Great Crusade remain beneath the ancient ruins of its old capital. Several millennia later, still inside the precursor¡¦s databanks are weapons designed in the final days of the last war. For the young and most inquisitive of Ascended Empires, these blueprints and concept drawings may prove to be a source of fascination, and the key to cement their technological advantage over the galaxy. While each Ascended Empire only saw in these weapons new ways to bring their rivals to their heels, they forget the development of these deadly weapons were ended for good reason. Some secrets are best left buried.[/i]
+
+The Zenith of Fallen Empires: Fallen Weaponry introduces a number of late-game weapons and utilities through events as Ascended Empires scoured the ancient precursor worlds in search of knowledge and lost technologies. This mod imagines that each Fallen Empire had developed their own secret weapons, each intending to give their ancient rival one nasty surprise. This is an add-on component mod to [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1317022177]The Zenith of Fallen Empires 2.0[/url] and note that this mod requires the base mod to run.
+
+
+[h1]Add-on Features:[/h1]
+
+[list]
+[*][b]New Titanic weapons[/b]
+
+[*][b]New XL weapons[/b]
+
+[*][b]New Ship Components[/b]
+
+[*][b]Resized Vanilla XL weapons to L slots through research[/b]*
+
+[/list]
+
+*Full features explained here.
+
+
+[h1]Other add-ons[/h1]
+
+[list]
+
+[*][b][url=http://steamcommunity.com/sharedfiles/filedetails/?id=1332475211]The Zenith of Fallen Empires: Ringworld Empires[/url][/b]
+
+[i]What if your empire had always lived on a Ringworld?[/i]
+
+[*][b][url=http://steamcommunity.com/sharedfiles/filedetails/?id=1322151384]The Zenith of Fallen Empires: Fallen Empire Ships Start[/url][/b]
+
+[i]Start your journey with a Fallen Empire ship or city set![/i]
+
+[*][b][url=http://steamcommunity.com/sharedfiles/filedetails/?id=1329763864]The Zenith of Fallen Empires: Fallen Empire Ships Names[/url][/b]
+
+[i]Fixes for serveral namelists for your Fallen Empire Ships![/i]
+
+
+[/list]
+
+[h1]Compatibility[/h1]
+
+Requires: [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1317022177]The Zenith of Fallen Empires 2.0[/url]
+
+Save-game Compatible
+
+
+[h1]FAQ:[/h1]
+
+No.
+
+
+###If you enjoy this functionality, don¡¦t forget to rate and subscribe :)
+
+
+If you support this project, visit my [url=http://www.patreon.com/kolyn][b]Patreon[/b][/url] to see if you would like to help out!

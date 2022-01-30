@@ -1,0 +1,14 @@
+trait_punctual = {
+	cost = 0
+	potential_crossbreeding_chance = 0.0
+	initial = no
+	randomized = no
+	modification = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_produces_mult = 0.10
+	}
+	slave_cost = {
+		energy = 200
+	}
+}

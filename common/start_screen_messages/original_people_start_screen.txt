@@ -1,0 +1,10 @@
+# Original People Civic
+part = {
+	location = 0
+	localization = "START_SCREEN_POST_ORIGINAL_PEOPLE"
+	
+	trigger = {
+		has_civic = civic_original_people
+		has_country_flag = original_people
+	}
+}

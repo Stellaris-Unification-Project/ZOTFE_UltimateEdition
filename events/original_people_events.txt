@@ -1,0 +1,219 @@
+############################
+#
+# Original People Events
+#
+# Written by Martin Anward
+#
+############################
+
+namespace = original_people
+
+#Fallen Empire warns Original People
+country_event = {
+	id = original_people.1
+	title = fallen_empires.8.name
+	desc = original_people.1.desc
+	
+	is_triggered_only = yes
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = from
+		planet_background = from
+		graphical_culture = from
+		city_level = from
+		room = from.ruler
+	}
+
+	immediate = {
+		from = { save_event_target_as = fallen_empire_humiliator }
+	}
+	
+	option = {
+		name = fallen_empires.8.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				fleet_power > 50000
+			}
+		}
+		fallen_empire_humiliate_effect = yes
+		from = { save_event_target_as = fallen_empire_humiliator }
+		tooltip = {
+			add_modifier = { modifier = humiliated days = 3600 }
+		}
+		custom_tooltip = "fallen_empires.8.a.tooltip"
+		hidden_effect = { remove_country_flag = fe_demand_made }
+	}
+	
+	option = {
+		name = fallen_empires.8.b
+		ai_chance = {
+			factor = 10
+		}		
+		custom_tooltip = fallen_empire_refuse_tooltip
+		hidden_effect = { 
+			from = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_demand } }
+			remove_country_flag = fe_demand_made 
+		}
+	}
+}
+
+# Fallen Empire Notices Original Empire Returns
+country_event = {
+	id = original_people.2
+	title = OK
+	desc = OK
+	hide_window = yes
+	trigger = {
+		is_country_type = fallen_empire
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		is_at_war = no
+		any_country = {
+			is_country_type = ascended_empire
+			has_valid_civic = civic_original_people
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		# Notify players
+		
+		every_country = {
+			limit = {
+				is_ai = no
+				has_valid_civic = civic_original_people
+			}
+			country_event = { id = original_people.3 }
+		}
+	}
+}
+
+#Awakened Fallen Empire prepares for war
+country_event = {
+	id = original_people.3
+	title = fallen_empires.8.name
+	
+	desc = {
+		trigger = {
+			from = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		text = original_people.3.desc
+	}
+	desc = {
+		trigger = {
+			from = { has_ethic = ethic_fanatic_materialist }
+		}
+		text = original_people.3.desc.b
+	}
+	desc = {
+		trigger = {
+			from = { has_ethic = ethic_fanatic_xenophile }
+		}
+		text = original_people.3.desc.c
+	}
+	desc = {
+		trigger = {
+			from = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		text = original_people.3.desc.d
+	}
+	
+	is_triggered_only = yes
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = from
+		planet_background = from
+		graphical_culture = from
+		city_level = from
+		room = from.ruler
+	}
+	
+	option = {
+		name = original_people.3.a
+		hidden_effect = { 
+			from = { country_event = { id = original_people.4 } }	
+		}
+	}
+}
+
+# Fallen Empire Wakes up
+country_event = {
+	id = original_people.4
+	title = OK
+	desc = OK
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		# Notify players
+		country_event = { id = fallen_empires_awakening.3 }
+		every_country = {
+			limit = {
+				is_ai = no		
+			}
+			country_event = { id = fallen_empires_awakening.2 }
+		}
+		observer_event = { id = observer.73 }
+	}
+}
+
+
+# Awakened Empire declares war
+country_event = {
+	id = original_people.5
+	title = OK
+	desc = OK
+	hide_window = yes
+	trigger = {
+		is_country_type = awakened_fallen_empire
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		NOT = { has_country_flag = wrath_of_the_ancients }
+		is_at_war = no
+		any_country = {
+			is_country_type = ascended_empire
+			has_valid_civic = civic_original_people
+			NOT = { has_country_flag = new_ascended_empire }
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	immediate = {
+		set_country_flag = wrath_of_the_ancients	
+		
+		random_country = {
+			limit = { 
+				is_country_type = ascended_empire
+				has_valid_civic = civic_original_people 
+				NOT = { has_country_flag = new_ascended_empire }
+			}
+			save_event_target_as = OriginalPeople
+			remove_country_flag = ai_no_wars
+			country_event = { id = fallen_empires.13 }
+			if = {
+				limit = { 
+					any_country = {
+						is_country_type = ascended_empire	
+						fleet_power > 50000
+					}
+				}
+				country_event = { id = fallen_empires.13 }
+			}
+		}	
+		
+		declare_war = {
+			target = event_target:OriginalPeople
+			name = "NAME_The_Wrath_Of_The_Ancients"
+			attacker_war_goal = "wg_end_threat"
+		}
+	}	
+}

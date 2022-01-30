@@ -1,0 +1,101 @@
+﻿### Aryan Name Lists
+### Written by Greetings
+
+
+ARYAN = {
+	selectable = { always = yes }
+	randomized = no
+	should_name_home_system_planets = no
+	
+	ship_names = {
+
+		generic = {
+			Adler Altenburg Altentreptow Altmark Amazone Ammersee Angermünde Answald Arkona Arminius Augsburg Augusta
+			Baden Barbarossa Barbe Basilisk Bayern Berlin Biene Bitterfeld Blitz Blücher Bodensee Börde Bonn Brandenburg Braunschweig Bremen Breslau Bützow
+			Calbe Camäleon Charlotte Cöln Colberg Cottbus Condor Crocodill Cobra Coburg
+			Dachs Dänholm Danzig Delphin Deneb Dessau Dithmarschen Dommel Drache Dresden
+			Eber Eberswalde Egerland Eider Eilenburg Eisenhüttenstadt Eisleben Elbe Erfurt Ermland
+			Falke Flink Föhr Felchen Fische Flensburg Förde Franken Frankfurt Frauenlob Freiburg Freya Freundschaft Freesendorf Fuchs 
+			Gadebusch Gazelle Geier Gellen Gentin Germania Gneisenau Granitz Gransee Greifswald Grille
+			Habicht Hagen Halle Hamburg Hameln Hannover Hanza Heimdall Hessen Hummel
+			Ida Jäger Jagd Jasmund
+			Kaiser Kamenz Karlsruhe Kiebitz Kiel Klütz Köln König Königsberg Kolberg Kühn
+			Lachs Lahm Leipzig Leopard Lindau Löwe Luchs Ludwigslust Lübben Lübz
+			Magdeburg Mainz Marburg Marder Mecklenburg Meissen München Munin Musquito Marie
+			Nassau Nauen Neckar Neiße Neptun Neubrandenburg Neumark Niobe Nordsee Nürnberg 
+			Odin Oker Oldenburg Ostmark Otter Oswald
+			Panther Pegnitz Perleberg Pfälzerland Pinguin Plötze Pluto Pommern Preußen Potsdam Prenzlau
+			Ranzow Regensburg Rendsburg Rhein Robbe Rochen Rostock Ruden Ruhr Röbel
+			Saarburg Sachsen Saturn Sauerland Schamien Scharnhorst Schlesien Schönebeck Schütze Schwaben Schwerin Seehund Siegburg Sonneberg Stuttgart
+			Tannenberg Teterow Thüringen Tiger Tirpitz Trischen Tübingen Togo
+			Überherrn Ulm Undine Uranus
+			Vaterland Vogelsand Völkingen Vulkan
+			Wotan Waren Weihe Weilheim Weimar Weissenburg Welle Weisswasser Weis Werdau Wespe Wiesel Württemberg
+			Yorck
+			Zähringen Zeitz Zieten Zingst
+		}
+
+	}
+
+	fleet_names = {
+		sequential_name = "%O% Kriegsflotte"
+	}
+	
+	army_names = {
+		
+		defense_army = {
+			sequential_name = "%O% Volkssturm-bataillon"
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Infanterie-division"
+		}
+	}
+		
+
+	### PLANETS
+
+	planet_names = {
+
+		generic = {
+			names = {
+				Berlin Hamburg Stuttgart Dresden Württemberg Ruhr Marburg Bamburg Meissen Münster München Frankfurt Bonn Köln Düsseldorf Bremen Hannover
+			}
+		}
+		
+	}
+
+	character_names = {
+		default = {
+			first_names_male = {
+				Ernst Friedrich Hans Heinrich Hermann Karl Otto Paul Walter Wilhelm Gerhard Günter Hans  Heinz  Helmut  Herbert  Kurt Werner 
+				Horst Jürgen Klaus Manfred Peter Wolfgang Michael Stefan Thomas 
+				Alexander Christian Daniel Dennis Jan Martin Michael Sebastian
+				Finn Jannik Jonas Leon Luca Lukas Niklas Tim Ben Oskar Moritz Manuel Julian
+				Frank Rommel Matthäus Hetzenauer Speer Klaus Phillipp Martin
+				Wilhelm Walter Wolfstein Rammstein Klause Reiner Christopher
+			}
+			first_names_female = {
+				Anna Bertha Elisabeth Emma Frieda Gertrud Margarethe Maria Marie Martha
+				Edith Elfriede Erna Gerda Hildegard Ilse Irmgard Lieselotte Ursula
+				Christa Elke Erika Gisela Helga Ingrid Karin Monika Renate
+				Andrea Angelika Birgit Gabriele Heike Martina Petra Sabine Susanne Ute
+				Anja Christina Julia Katrin Melanie Nadine Nicole Sabrina Sandra Stefanie
+				Hannah Lara Laura Lea Lena Lisa Michelle Sarah 
+			}
+			second_names = {
+				Müller Schmidt Schneider Fischer Weber Mayer Wagner Becker Schulz Hoffmann Schäfer Koch Bauer Richter Klein Neuer Schwarz
+				Braun Schmitz Krause Schulze Schmid Lehmann König Herrmann Jung Stein Brandt Pfeiffer Sauer	Herzmann Steller Gnadt Stein Meyer
+				Merkel Lang Peters Beck Winter Kraus Bergmann Wolff Graf Schneiber Otto Haas
+			}
+		}
+	}
+
+	ruler_names = {
+		default = {
+			full_names = {
+				"Wilheim the Wise" "Friedrich the Furious"
+			}
+		}
+	}
+}

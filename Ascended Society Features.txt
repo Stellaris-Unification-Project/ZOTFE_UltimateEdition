@@ -1,0 +1,97 @@
+As this mod is an add-on from The Zenith of Fallen Empires 2.0, and requires that to run, I shall have to assume reasonable knowledge into the workings of the base mod, in order to explain these add-on features.
+
+
+[h1]Societal Evolution[/h1]
+
+This is otherwise known as fallen_technologies_1, it is the first tech of ZoFE that you will encounter in the base mod. This tech now unlocks a building called ¡¥Central Square¡¦. Central square gives 3 unity and 2 additional unity to adjacent tiles, meaning it is always a good idea to put your unity buildings together. The idea is that your planet should look like it has a cultural hub of its own. A central square where people can gather for festivities, and beside it is an Ether Drake Shrine, or an Authoritarian Statue, for example. This helps a player connect with the colony they are building and engage the player in shaping their society. In general, buildings in this mod that produces unity should make sense to put beside a Central Square.
+
+
+[h1]Societal Housing[/h1]
+
+Requires Societal Evolution. To begin your journey to ¡¥convert¡¦ a population to your cause, you will bribe sections of your society with generous housing schemes. There are 3 housing types: High Tech Apartments, Country Mansion, and Grand Palace. Democratic Authority will only unlock High Tech Apartments, Oligarchic will unlock Country Mansion, and Grand Palace will be unlocked by Dictatorship or Imperial Authorities. These buildings are planet unique so they cannot be spammed (No buildings in this mod shall be spammed on a planet, as placing them should be a deliberate choice). This also signals the start of societal changes.
+
+
+[h1]Societal Buildings[/h1]
+
+Requires Societal Housing. The first tier of ethic buildings will become available, and you will be able to build them if you have at least the normal ethic needed for that building. These are the buildings you will see:
+
+[list]
+[*]Spiritualist ¡V Sacred Ground
+
+[*]Materialist ¡V Technolith
+
+[*]Xenophile ¡V Xeno Culture Centre
+
+[*]Xenophobe ¡V Immigration Bureau
+
+[*]Militarist ¡V Hunting Grounds
+
+[*]Pacifist ¡V Vacation Retreat
+
+[*]Authoritarian ¡V Authoritarian Statue
+
+[*]Egalitarian ¡V Commercial District
+
+[/list]
+
+The stats of these buildings are subject to balancing changes and so I won¡¦t list them here as I have to change those every time I make a change. Note that if you change ethic (IE, if you no longer have a materialist ethic), then your Technolith will be destroyed.
+
+
+[h1]Societal Ascendance[/h1]
+
+Requires Societal Buildings. The second tier of ethic buildings will be available to you. However, you will need a fanatic ethic to be able to build/keep that building. As such these buildings are more powerful than tier 1 ethic buildings, but do not always provide the same bonuses. Yes, you can keep both providing you have the ethic requirements.
+
+[list]
+[*]Spiritualist ¡V Altar of Worship
+
+[*]Materialist ¡V Modern Archives
+
+[*]Xenophile ¡V Xeno Garden
+
+[*]Xenophobe ¡V Statue of Purity
+
+[*]Militarist ¡V Fortified Bunker
+
+[*]Pacifist ¡V Dome of Life
+
+[*]Authoritarian ¡V Labor Camp
+
+[*]Egalitarian ¡V Civilian Teleportation
+[/list]
+
+As above, you will need a fanatic ethic in order to build and keep these buildings, or they will be destroyed (IE if you are now a Materialist instead of Fanatic Materialist, then your Modern Archives will be destroyed but you will keep your Technolith if you have one).
+
+
+[h1]Ascended Society[/h1]
+
+Requires Societal Ascendance and also require you to be an Ascended Empire. Your society has ascended at last and you can now build more powerful empire unique buildings that give empire-wide bonuses.
+
+[list]
+[*]Spiritualist ¡V Consecrated Tomb
+
+[*]Materialist ¡V Empire State University
+
+[*]Xenophile ¡V Xeno Museum
+
+[*]Xenophobe ¡V Altar of Purity
+
+[*]Militarist ¡V Monument to the Fallen
+
+[*]Pacifist ¡V Beacon of Peace
+
+[*]Authoritarian ¡V Secret Police HQ
+
+[*]Egalitarian ¡V Supreme Court of Justice
+[/list]
+
+Unlike the Tier 2 buildings however, these are empire unique.
+
+
+[h1]Synthetic Strategic Resources[/h1]
+
+Like the matter generation technology, you are now able to convert 50 energy and 50 minerals into a strategic resource of your choice. This is unlocked via Engineering Perfection (fallen_technologies_2). Simply build the foundation facility and choose your upgrade (if you have the relevant vanilla tech). AI is scripted to never build these just like matter generators though. Each upgrade is empire unique, meaning you can only build 1 synthetic dark matter for example.
+
+
+[h1]Utopian Paradise[/h1]
+
+Utopian Paradise is a powerful planet modifier that can be created by using a very expensive planetary edict, unlocked in Ascended Society. This edict is only usable on Gaia and Ring Worlds. The idea is that your technological mastery is such that you can create true beauty in the universe, and make your world (or worlds) really special. Fallen Empire Gaia or Ring Worlds also have these modifiers, so it does buff them a bit in terms of resource production, yet making those worlds more valuable to grab.

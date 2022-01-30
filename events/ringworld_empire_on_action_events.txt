@@ -1,0 +1,342 @@
+#####################################################
+#      		ZoFE Ringworld Empire On Action Events
+#		  				  By Kolyn
+#####################################################
+
+namespace = ringworld_empires_on_action
+
+event = {
+	id = ringworld_empires_on_action.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		every_system_planet = {
+			limit = { 
+				AND = {
+					NOT = { is_planet_class = pc_ringworld_habitable }
+					has_planet_flag = ringworld_start
+				}
+			}
+	
+			change_pc = pc_ringworld_habitable
+			
+		}	
+	}
+}
+
+### Empire init - add technologies and resources
+country_event = {
+	id = ringworld_empires_on_action.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_owned_planet = {
+					has_planet_flag = ringworld_start
+				}
+			}
+			add_resource = { energy = 9900	}
+			add_resource = { minerals = 9900 }
+			add_resource = { alloys = 4900	}
+			add_resource = { food = 4800 }
+			add_resource = { consumer_goods = 4900 }
+			add_resource = { influence = 900 }
+		}
+	}
+}
+
+### Remove district
+planet_event = {
+	id = ringworld_empires_on_action.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+			}
+			clear_blockers = yes
+			add_deposit = d_ancient_bombardment_craters
+			add_deposit = d_ancient_battlefield
+		
+			add_deposit = d_ancestor_ruins
+			add_deposit = d_ancestor_ruins
+			add_deposit = d_ancestor_ruins
+			add_deposit = d_ancestor_ruins
+			add_deposit = d_ancestor_ruins
+			add_deposit = d_ancestor_mineral_vault
+			add_deposit = d_ancestor_mineral_vault
+			add_deposit = d_ancestor_mineral_vault
+			add_deposit = d_ancestor_mineral_vault
+			add_deposit = d_ancestor_mineral_vault
+			add_deposit = d_ancestor_ship_graveyard
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_city
+			}
+			remove_district = district_city
+			add_district = district_rw_city
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_city
+			}
+			remove_district = district_city	
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_city
+			}
+			remove_district = district_city	
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_city
+			}
+			remove_district = district_city	
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_hive
+			}
+			remove_district = district_hive	
+			add_district = district_rw_hive
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_hive
+			}
+			remove_district = district_hive	
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_hive
+			}
+			remove_district = district_hive	
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_nexus
+			}
+			remove_district = district_nexus
+			add_district = district_rw_nexus
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_nexus
+			}
+			remove_district = district_nexus
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_nexus
+			}
+			remove_district = district_nexus
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_generator
+			}
+			remove_district = district_generator
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_generator
+			}
+			remove_district = district_generator
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_generator
+			}
+			remove_district = district_generator
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_farming
+			}
+			remove_district = district_farming
+			add_district = district_rw_farming
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_farming
+			}
+			remove_district = district_farming
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_farming
+			}
+			remove_district = district_farming
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_mining
+			}
+			remove_district = district_mining
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_mining
+			}
+			remove_district = district_mining
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				has_district = district_mining
+			}
+			remove_district = district_mining
+			
+		}
+		if = {
+			limit = {
+				has_planet_flag = op_ringworld
+				exists = owner
+				owner = {
+					NOR = {
+						has_authority = auth_hive_mind
+						has_authority = auth_machine_intelligence
+					}
+				}
+			}
+			
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_district = district_rw_city
+			
+			while = {
+				count = 25
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = op_ringworld
+				exists = owner
+				owner = {
+					has_authority = auth_hive_mind
+				}
+			}
+			
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_district = district_rw_hive
+			
+			while = {
+				count = 25
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = op_ringworld
+				exists = owner
+				owner = {
+					has_authority = auth_machine_intelligence
+				}
+			}
+			
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			add_district = district_rw_nexus
+			
+			while = {
+				count = 25
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = rich_ringworld
+			}
+			add_building = building_dimensional_fabricator
+			add_building = building_dimensional_fabricator
+			add_building = building_class_4_singularity
+			add_building = building_class_4_singularity
+			while = {
+				count = 15
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = ringworld_start
+				NOR = {
+					has_planet_flag = rich_ringworld
+					has_planet_flag = op_ringworld
+				}
+			}
+			add_building = building_dimensional_fabricator
+			add_building = building_class_4_singularity
+			while = {
+				count = 5
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+	}
+}

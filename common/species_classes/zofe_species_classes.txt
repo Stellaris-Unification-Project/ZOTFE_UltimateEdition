@@ -1,0 +1,168 @@
+Fallen_Spiritualist = {
+	
+	randomized = no
+
+	graphical_culture = fallen_spiritualist
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Spiritualist_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_spiritualist_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Materialist = {
+	
+	randomized = no
+
+	graphical_culture = fallen_materialist
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Materialist_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_materialist_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Xenophile = {
+	
+	randomized = no
+
+	graphical_culture = fallen_xenophile
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Xenophile_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_xenophile_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Xenophobe = {
+	
+	randomized = no
+
+	graphical_culture = fallen_xenophobe
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Xenophobe_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_xenophobe_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Militarist = {
+	
+	randomized = no
+
+	graphical_culture = fallen_militarist
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Militarist_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_militarist_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Pacifist = {
+	
+	randomized = no
+
+	graphical_culture = fallen_pacifist
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Pacifist_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_pacifist_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Authoritarian = {
+	
+	randomized = no
+
+	graphical_culture = fallen_authoritarian
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Authoritarian_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_authoritarian_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Egalitarian = {
+	
+	randomized = no
+
+	graphical_culture = fallen_egalitarian
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Egalitarian_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_egalitarian_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Hive_Mind = {
+	
+	randomized = no
+
+	graphical_culture = fallen_hive_mind
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Hive_Mind_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_hive_mind_02
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+Fallen_Machine = {
+	
+	randomized = no
+
+	graphical_culture = fallen_machine
+	move_pop_sound_effect = "robot_pops_move"
+}
+
+Fallen_Machine_02 = {
+	
+	randomized = no
+
+	graphical_culture = fallen_machine_02
+	move_pop_sound_effect = "robot_pops_move"
+}
+
+Fallen_Megacorp = {
+	
+	randomized = no
+
+	graphical_culture = fallen_megacorp
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+

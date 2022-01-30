@@ -1,0 +1,42 @@
+This mod is an add-on component mod to [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1317022177]The Zenith of Fallen Empires 2.0[/url] and provides the functionality of starting with Fallen Empire ship sets, and Fallen Empire City sets available from the base mod. Note that this mod requires the base mod to run and no new ship classes are added.
+
+
+[h1]Add-on Features:[/h1]
+
+[list]
+
+[*][b]Ability to start with 1 of the 16 Fallen Empire ship set color variants[/b]
+
+[*][b]Ability to start with 1 of the 16 Fallen Empire city sets[/b]
+
+[*][b]Diplomacy room backgrounds in the future if people ask for it.[/b]
+
+[/list]
+
+
+[h1]Other add-ons[/h1]
+
+[list]
+
+[*][b][url=http://steamcommunity.com/sharedfiles/filedetails/?id=1324095331]The Zenith of Fallen Empires: Ascended Society[/url][/b]
+
+[i]Societal Evolution requires an empire to cater for its citizens. Unbeknownst to these citizens, each building in turn shapes their society, gradually moving them towards the path of fanaticism.[/i]
+
+[/list]
+
+
+[h1]Compatibility[/h1]
+
+Requires: [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1317022177]The Zenith of Fallen Empires 2.0[/url]
+
+
+[h1]FAQ:[/h1]
+
+No.
+
+
+###If you enjoy this functionality, don¡¦t forget to rate and subscribe :)
+
+
+If you support this project, visit my [url=http://www.patreon.com/kolyn][b]Patreon[/b][/url] to see if you would like to help out!
+

@@ -1,0 +1,101 @@
+d_ancestor_ruins = {	
+	time = 180
+	
+	icon = default_blocker
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers	
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+	
+	potential = {
+		has_planet_flag = ringworld_start
+		is_planet_class = pc_ringworld_habitable
+	}
+	
+	planet_modifier = { 
+	
+	}
+	
+	on_cleared = {
+		owner = { add_resource = { minerals = 500 } }
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_ancestor_mineral_vault = {	
+	time = 270
+	
+	icon = d_bunker_door
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers	
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+		}
+	}
+	
+	potential = {
+		has_planet_flag = ringworld_start
+		is_planet_class = pc_ringworld_habitable
+	}
+	
+	planet_modifier = { 
+	
+	}
+	
+	on_cleared = {
+		owner = { add_resource = { minerals = 1000 } }
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_ancestor_ship_graveyard = {	
+	time = 360
+	
+	icon = d_metal_boneyard
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+	
+	potential = {
+		has_planet_flag = ringworld_start
+		is_planet_class = pc_ringworld_habitable
+	}
+	
+	planet_modifier = { 
+	
+	}
+	
+	on_cleared = {
+		owner = { add_resource = { minerals = 5000 } }
+		hidden_effect = {
+			planet_event = { id = ringworld_empire.1 }
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

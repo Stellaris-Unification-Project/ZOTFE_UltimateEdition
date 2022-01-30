@@ -1,0 +1,369 @@
+### Utopia System
+
+utopia_system_initializer = {
+	name = "Utopia"
+	class = "sc_a"
+
+	flags = { utopia_system }
+	usage = custom_empire
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = 60
+	}
+
+	change_orbit = 90
+	
+	planet = {
+		name = "Palatial District"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 15
+		orbit_distance = 0
+
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+	
+		
+		init_effect = {
+			change_pc = "pc_ringworld_habitable"
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = ringworld_start
+			set_planet_flag = rich_ringworld
+			set_planet_flag = megastructure
+			set_planet_size = 5
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section B"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section C"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Residential District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section E"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section F"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Trade District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section H"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section I"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Science District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section J"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section K"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}	
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Industrial District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section M"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section N"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Medical District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section P"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section Q"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Agrarian District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section S"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section T"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "Cultural District"
+		orbit_angle = 15
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			
+			while = {
+				count = 5
+				add_deposit = d_ancestor_ruins
+			}
+			while = {
+				count = 5
+				add_deposit = d_ancestor_mineral_vault
+			}
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section V"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section W"
+		orbit_angle = 15
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+}

@@ -1,0 +1,586 @@
+###Ringworld Empire Effects
+
+create_ringworld_empire_fleet = {
+	create_fleet = {
+		name = "NAME_Gift_of_the_Ancestors"
+		settings = {
+			spawn_debris = no
+			can_upgrade = no 
+			can_disband = yes
+			uses_naval_capacity = no
+		}
+		effect = {
+			set_owner = ROOT.owner
+			create_ringworld_empire_battlecruiser = yes
+			while = {
+				count = 3
+				create_ringworld_empire_escort = yes
+			}
+			set_location = ROOT
+		}
+	}
+}	
+
+create_ringworld_empire_titan_fleet = {
+	create_fleet = {
+		name = "NAME_Bane_of_the_Ancestors"
+		settings = {
+			spawn_debris = no
+			can_upgrade = no 
+			can_disband = yes
+			uses_naval_capacity = no
+		}
+		effect = {
+			set_owner = ROOT.owner
+			create_ringworld_empire_titan = yes
+			set_location = ROOT
+		}
+	}
+}						
+
+
+
+create_ringworld_empire_battlecruiser = {
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Spiritualist_Battlecruiser"
+			graphical_culture = fallen_spiritualist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Materialist_Battlecruiser"
+			graphical_culture = fallen_materialist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophile_Battlecruiser"
+			graphical_culture = fallen_xenophile
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_ethic = ethic_fanatic_xenophobe
+				NOT = {
+					has_valid_civic = civic_fanatic_purifiers
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophobe_Battlecruiser"
+			graphical_culture = fallen_xenophobe
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Militarist_Battlecruiser"
+			graphical_culture = fallen_militarist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+				NOT = { has_valid_civic = civic_inwards_perfection }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Pacifist_Battlecruiser"
+			graphical_culture = fallen_pacifist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Authoritarian_Battlecruiser"
+			graphical_culture = fallen_authoritarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Egalitarian_Battlecruiser"
+			graphical_culture = fallen_egalitarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				NOR = {
+					has_ethic = ethic_fanatic_spiritualist 
+					has_ethic = ethic_fanatic_materialist
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_fanatic_militarist
+					has_ethic = ethic_fanatic_pacifist
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_fanatic_egalitarian
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Generic_Battlecruiser"
+			graphical_culture = fallen_militarist_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_ethic = ethic_fanatic_xenophobe
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophobe_Battlecruiser"
+			graphical_culture = fallen_xenophobe_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+				has_valid_civic = civic_inwards_perfection
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Pacifist_Battlecruiser"
+			graphical_culture = fallen_pacifist_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_authority = auth_hive_mind
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Hive_Mind_Battlecruiser"
+			graphical_culture = fallen_hive_mind
+			upgradable = no
+		}						
+	}	
+	if = {
+		limit = {
+			owner = {
+				has_authority = auth_hive_mind
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Hive_Mind_Battlecruiser"
+			graphical_culture = fallen_hive_mind_02
+			upgradable = no
+		}						
+	}		
+	if = {
+		limit = {
+			owner = { 
+				has_authority = auth_machine_intelligence
+				NOT = { has_valid_civic = civic_machine_terminator }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Machine_Battlecruiser"
+			graphical_culture = fallen_machine
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_authority = auth_machine_intelligence
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Machine_Battlecruiser"
+			graphical_culture = fallen_machine_02
+			upgradable = no
+		}						
+	}			
+}
+
+create_ringworld_empire_escort = {
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Spiritualist_Escort"
+			graphical_culture = fallen_spiritualist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Materialist_Escort"
+			graphical_culture = fallen_materialist
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophile_Escort"
+			graphical_culture = fallen_xenophile
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_ethic = ethic_fanatic_xenophobe
+				NOT = {
+					has_valid_civic = civic_fanatic_purifiers
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophobe_Escort"
+			graphical_culture = fallen_xenophobe
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Militarist_Escort"
+			graphical_culture = fallen_militarist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+				NOT = { has_valid_civic = civic_inwards_perfection }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Pacifist_Escort"
+			graphical_culture = fallen_pacifist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Authoritarian_Escort"
+			graphical_culture = fallen_authoritarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Egalitarian_Escort"
+			graphical_culture = fallen_egalitarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				NOR = {
+					has_ethic = ethic_fanatic_spiritualist 
+					has_ethic = ethic_fanatic_materialist
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_fanatic_militarist
+					has_ethic = ethic_fanatic_pacifist
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_fanatic_egalitarian
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Generic_Escort"
+			graphical_culture = fallen_militarist_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_ethic = ethic_fanatic_xenophobe
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Xenophobe_Escort"
+			graphical_culture = fallen_xenophobe_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+				has_valid_civic = civic_inwards_perfection
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Pacifist_Escort"
+			graphical_culture = fallen_pacifist_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_authority = auth_hive_mind
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Hive_Mind_Escort"
+			graphical_culture = fallen_hive_mind
+			upgradable = no
+		}						
+	}	
+	if = {
+		limit = {
+			owner = {
+				has_authority = auth_hive_mind
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Hive_Mind_Escort"
+			graphical_culture = fallen_hive_mind_02
+			upgradable = no
+		}						
+	}		
+	if = {
+		limit = {
+			owner = { 
+				has_authority = auth_machine_intelligence
+				NOT = { has_valid_civic = civic_machine_terminator }
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Machine_Escort"
+			graphical_culture = fallen_machine
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_authority = auth_machine_intelligence
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Machine_Escort"
+			graphical_culture = fallen_machine_02
+			upgradable = no
+		}						
+	}			
+}
+
+create_ringworld_empire_titan = {
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Savant"
+			graphical_culture = fallen_empire_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Eternal"
+			graphical_culture = fallen_empire_01
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Imperium"
+			graphical_culture = fallen_empire_04
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Keeper"
+			graphical_culture = fallen_empire_03
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_militarist }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Generic_Titan"
+			graphical_culture = fallen_pacifist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Generic_Titan"
+			graphical_culture = fallen_militarist
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Generic_Titan"
+			graphical_culture = fallen_egalitarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_egalitarian }
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Generic_Titan"
+			graphical_culture = fallen_authoritarian
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = { 
+				NOR = {
+					has_ethic = ethic_fanatic_spiritualist 
+					has_ethic = ethic_fanatic_materialist
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_fanatic_militarist
+					has_ethic = ethic_fanatic_pacifist
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_fanatic_egalitarian
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Generic_Titan"
+			graphical_culture = fallen_authoritarian_02
+			upgradable = no
+		}						
+	}
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_authority = auth_hive_mind
+					has_authority = auth_machine_intelligence
+				}
+			}
+		}
+		create_ship = {
+			name = "Nemesis"
+			design = "NAME_Imperium"
+			graphical_culture = fallen_empire_04
+			upgradable = no
+		}						
+	}					
+}

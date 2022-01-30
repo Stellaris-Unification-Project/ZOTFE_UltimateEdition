@@ -1,0 +1,146 @@
+### Broken Ringworld
+
+broken_ringworld_system_initializer = {
+	name = "The Broken"
+	class = "rl_all_stars"
+
+	flags = { broken_ringworld_system }
+	usage = custom_empire
+
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	change_orbit = 45
+	
+	planet = {
+		name = "Broken"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+			
+		init_effect = {
+			change_pc = "pc_ringworld_habitable"
+			prevent_anomaly = yes
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			set_planet_flag = ringworld_start
+			set_planet_size = 5
+			
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "Ring Section B"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "Ring Section C"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		name = "Ring Section D"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}				
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "Ring Section E"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "Ring Section F"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		name = "Ring Section G"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "Ring Section H"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "Ring Section I"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		name = "Ring Section J"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		name = "Ring Section K"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "Ring Section L"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+}

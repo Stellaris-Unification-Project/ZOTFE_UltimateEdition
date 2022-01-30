@@ -1,0 +1,21 @@
+[h1]Patch #2-16[/h1]
+
+[list]
+[*]The Prescripted Empire's homeworld is renamed to Arya.
+
+[*]Fixed remaining instances of size 50 ringworlds
+
+[*]Fixed Ringworld Districts.
+
+[*]Updated for 2.2.*
+
+[*]Aryan 01 graphics for Fallen Weaponry.
+
+[*]Localisations are moved to the main mod.
+
+[*]Fixed Central Square tech localisation.
+
+[*]Goliath event now properly checks if a player has chosen a FE ship set.
+
+[*]Hedonist generation changed from monthly to yearly pulse, significantly reducing how quickly Hedonists appear.
+[/list]
