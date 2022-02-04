@@ -2,7 +2,6 @@
 # Lost Empire CB
 ##################
 
-
 cb_banish_ascendancy = {
 	show_in_diplomacy = yes
 	show_notification = yes
@@ -18,7 +17,7 @@ cb_banish_ascendancy = {
 				has_valid_civic = civic_machine_assimilator
 				has_valid_civic = civic_machine_terminator
 			}
-		}	
+		}
 	}
 	is_valid = {
 		has_total_war_cb = yes
