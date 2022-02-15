@@ -1,6 +1,7 @@
 ##################
 ### TECH COSTS ###
 ##################
+
 #If you change any of these, use replace in files so the values are the same across all files
 
 @tier1cost1 = 500
@@ -47,44 +48,35 @@
 @tier5weight2 = 25
 @tier5weight3 = 20
 
+#######################
+###	Ancient Weapons	###
+#######################
 
-#Psi Missiles
+#	Spiritualist: Psi Missiles
 tech_psi_missile_system = {
 	area = engineering
 	cost = 25000
 	tier = 5
 	category = { propulsion }
 	ai_update_type = military
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
+#	Materialist: Shadow Strike Craft
 tech_shadow_strike_craft = {
 	cost = 25000
 	area = engineering
 	tier = 5
 	ai_update_type = military
-	category = { voidcraft }	
-	
+	category = { voidcraft }
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
+#	Xenophile: Hellfire Autocannons
 tech_hellfire_autocannons = {
 	area = engineering
 	cost = 25000
@@ -92,16 +84,11 @@ tech_hellfire_autocannons = {
 	category = { propulsion }
 	ai_update_type = military
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
+#	Xenophobe: Terror Cannon
 tech_terror_cannon = {
 	area = engineering
 	cost = 25000
@@ -109,16 +96,11 @@ tech_terror_cannon = {
 	category = { propulsion }
 	ai_update_type = military
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
+#	Machine: Ion Disruptor
 tech_ion_disruptor = {
 	area = physics
 	cost = 25000
@@ -126,212 +108,77 @@ tech_ion_disruptor = {
 	category = { particles }
 	ai_update_type = military
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
+################################
+####	Ancient Utilities	####
+################################
 
-
-##Omni Lance
-
-tech_omni_lance = {
+tech_dark_energy_shield = {
 	area = physics
 	cost = 25000
 	tier = 5
-	category = { particles }
-	ai_update_type = military
+	category = { field_manipulation }
+	ai_update_type = all
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-##Compact Omni Lance
-
-tech_compact_omni_lance = {
-	area = physics
-	cost = 25000
-	tier = 5
-	category = { particles }
-	ai_update_type = military
-	weight = @tier5weight2
-	is_rare = yes
-
-	prerequisites = { "tech_resized_energy_lance_2" "tech_omni_lance" }
-	
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				is_country_type = ascended_empire
-			}
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}	
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-}
-
-##Omni Emitter
-
-tech_omni_emitter = {
-	area = physics
-	cost = 25000
-	tier = 5
-	category = { particles }
-	ai_update_type = military
-	is_rare = yes
-	
-	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
-}
-
-##Compact Omni Emitter
-
-tech_compact_omni_emitter = {
-	area = physics
-	cost = 25000
-	tier = 5
-	category = { particles }
-	ai_update_type = military
-	weight = @tier5weight2
-	is_rare = yes
-
-	prerequisites = { "tech_resized_arc_emitter_2" "tech_omni_emitter" }
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				is_country_type = ascended_empire
-			}
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}	
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-}
-
-tech_massive_autocannons = {
+tech_dark_matter_plating = {
 	area = engineering
 	cost = 25000
 	tier = 5
-	category = { propulsion }
-	ai_update_type = military
+	category = { materials }
+	ai_update_type = all	
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_omni_cannon = {
+tech_improved_dragon_armor = {
 	area = engineering
 	cost = 25000
 	tier = 5
-	category = { propulsion }
-	ai_update_type = military
+	category = { materials }
+	ai_update_type = all	
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
+
+tech_psi_deflector = {
+	area = physics
+	cost = 25000
+	tier = 5
+	category = { field_manipulation }
+	ai_update_type = all
+	is_rare = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
+}
+
+tech_titan_armor = {
+	area = engineering
+	cost = 25000
+	tier = 5
+	category = { materials }
+	ai_update_type = all	
+	is_rare = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
+}
+
+############################
+####	Omni Weapons	####
+############################
 
 tech_compact_omni_cannon = {
 	area = engineering
@@ -340,17 +187,12 @@ tech_compact_omni_cannon = {
 	category = { propulsion }
 	ai_update_type = military
 	is_rare = yes
-	
 	prerequisites = { "tech_resized_mass_accelerator_2" "tech_omni_cannon" }
-	
 	weight = @tier5weight2
-	
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				is_country_type = ascended_empire
-			}
+			NOT = { is_country_type = ascended_empire }
 		}
 		modifier = {
 			factor = 1.25
@@ -368,7 +210,6 @@ tech_compact_omni_cannon = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
@@ -387,67 +228,108 @@ tech_compact_omni_cannon = {
 			}
 		}
 	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_portal_generator = {
+#	Compact Omni Emitter
+tech_compact_omni_emitter = {
 	area = physics
 	cost = 25000
 	tier = 5
 	category = { particles }
 	ai_update_type = military
+	weight = @tier5weight2
 	is_rare = yes
-	is_dangerous = yes
-	
-	weight = 0
-	
+	prerequisites = { "tech_resized_arc_emitter_2" "tech_omni_emitter" }
 	weight_modifier = {
-		factor = 0
+		modifier = {
+			factor = 0
+			NOT = { is_country_type = ascended_empire }
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
 	}
-	
 	ai_weight = {
 		factor = 20		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
 	}
 }
 
-tech_dragon_breath = {
+#	Compact Omni Lance
+tech_compact_omni_lance = {
 	area = physics
 	cost = 25000
 	tier = 5
 	category = { particles }
 	ai_update_type = military
+	weight = @tier5weight2
 	is_rare = yes
-	
-	weight = 0
-	
+	prerequisites = { "tech_resized_energy_lance_2" "tech_omni_lance" }
 	weight_modifier = {
-		factor = 0
-	}
-	
+		modifier = {
+			factor = 0
+			NOT = { is_country_type = ascended_empire }
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
 	ai_weight = {
 		factor = 20		#weapons are good
-	}
-}
-
-tech_stellarite_weapon = {
-	area = physics
-	cost = 25000
-	tier = 5
-	category = { particles }
-	ai_update_type = military
-	is_rare = yes
-	
-	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
 	}
 }
 
@@ -458,35 +340,21 @@ tech_dimensional_weapon = {
 	category = { particles }
 	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_scrapper_weapon = {
-	area = engineering
+tech_dragon_breath = {
+	area = physics
 	cost = 25000
 	tier = 5
-	category = { propulsion }
+	category = { particles }
 	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}	
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
 tech_elder_tiyanki_weapon = {
@@ -496,24 +364,16 @@ tech_elder_tiyanki_weapon = {
 	category = { particles }
 	ai_update_type = military
 	is_rare = yes
-	
 	weight = @tier5weight3
-	
 	prerequisites = { "tech_titans" }
-	
 	weight_modifier = {
 		factor = 0
 		modifier = {
 			factor = 0
-			NOT = {
-				has_country_flag = encountered_elderly_tiyanki
-			}
+			NOT = { has_country_flag = encountered_elderly_tiyanki }
 		}
 	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
 tech_gray_goo_beam = {
@@ -523,105 +383,93 @@ tech_gray_goo_beam = {
 	category = { particles }
 	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_psi_deflector = {
+tech_massive_autocannons = {
+	area = engineering
+	cost = 25000
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	is_rare = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
+}
+
+tech_omni_cannon = {
+	area = engineering
+	cost = 25000
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	is_rare = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
+}
+
+#	Omni Emitter
+tech_omni_emitter = {
 	area = physics
 	cost = 25000
 	tier = 5
-	category = { field_manipulation }
-	ai_update_type = all
+	category = { particles }
+	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_dark_energy_shield = {
+#	Omni Lance
+tech_omni_lance = {
 	area = physics
 	cost = 25000
 	tier = 5
-	category = { field_manipulation }
-	ai_update_type = all
+	category = { particles }
+	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_dark_matter_plating = {
+tech_portal_generator = {
+	area = physics
+	cost = 25000
+	tier = 5
+	category = { particles }
+	ai_update_type = military
+	is_rare = yes
+	is_dangerous = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
+}
+
+tech_scrapper_weapon = {
 	area = engineering
 	cost = 25000
 	tier = 5
-	category = { materials }
-	ai_update_type = all	
+	category = { propulsion }
+	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}	
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }
 
-tech_improved_dragon_armor = {
-	area = engineering
+tech_stellarite_weapon = {
+	area = physics
 	cost = 25000
 	tier = 5
-	category = { materials }
-	ai_update_type = all	
+	category = { particles }
+	ai_update_type = military
 	is_rare = yes
-	
 	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
-}
-
-tech_titan_armor = {
-	area = engineering
-	cost = 25000
-	tier = 5
-	category = { materials }
-	ai_update_type = all	
-	is_rare = yes
-	
-	weight = 0
-	
-	weight_modifier = {
-		factor = 0
-	}
-	
-	ai_weight = {
-		factor = 20		#weapons are good
-	}
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 20 }		#weapons are good
 }

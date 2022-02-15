@@ -249,7 +249,7 @@ planet_event = {
 			add_building = building_class_4_singularity
 			add_building = building_class_4_singularity
 			add_district = district_rw_city
-			
+
 			while = {
 				count = 25
 				create_pop = {

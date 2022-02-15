@@ -4,9 +4,7 @@
 
 renounce_ascendancy = {
 	is_ambition = yes
-
 	length = 0
-
 	potential = {
 		is_country_type = ascended_empire
 		NOR = {

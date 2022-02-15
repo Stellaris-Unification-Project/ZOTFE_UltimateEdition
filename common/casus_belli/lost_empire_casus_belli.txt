@@ -25,7 +25,7 @@ cb_banish_ascendancy = {
 			AND = {
 				OR = {
 					is_country_type = ascended_empire
-					is_fallen_empire = yes
+#					is_country_type = fallen_empire
 				}
 				NOR = {
 					has_valid_civic = civic_fanatic_purifiers

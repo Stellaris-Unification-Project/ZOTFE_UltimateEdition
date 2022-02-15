@@ -1,5 +1,1 @@
-on_game_start = {
-	events = {
-		zofe_action.6
-	}
-}
+on_game_start = { events = { zofe_action.6 } }

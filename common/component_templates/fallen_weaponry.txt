@@ -1,18 +1,94 @@
-########################
-### Resized Weapons
-########################
+#######################
+###	Resized	Weapons	###
+#######################
 
-# Psi Missile System
+#	Hellfire Autocannon
+weapon_component_template = {
+	key = "HELLFIRE_AUTOCANNONS"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	type = instant	
+	icon = "GFX_ship_part_hellfire_autocannons"
+	icon_frame = 1	
+	damage = { min = 177 max = 534 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 60.0
+	accuracy = 0.8
+	hull_damage = 1.25
+	shield_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	armor_damage = 0.25
+	tracking = 0.05
+	power = -120
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			rare_crystals = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_hellfire_autocannons" }
+	component_set = "HELLFIRE_AUTOCANNONS"
+	projectile_gfx = "hellfire_autocannons"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 0
+}
+
+#	Ion Disruptor
+weapon_component_template = {
+	key = "ION_DISRUPTOR"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_ship_part_ion_disruptor"
+	icon_frame = 1
+	damage = { min = 1 max = 500 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 30
+	range = 80.0
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1
+	armor_penetration = 1
+	tracking = 0.05
+	power = -120
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			rare_crystals = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	prerequisites = { "tech_ion_disruptor" }
+	component_set = "ION_DISRUPTOR"
+	projectile_gfx = "ion_disruptor_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+}
+
+#	Psi Missile System
 weapon_component_template = {
 	key = "PSI_MISSILE_SYSTEM"
 	size = torpedo
-	entity = "turret_missile_medium_entity"
-	
+	entity = "turret_missile_medium_entity"	
 	icon = "GFX_ship_part_psi_missile_system"
 	icon_frame = 1
 	static_rotation = no
-	type = missile
-	
+	type = missile	
 	damage = { min = 80 max = 116 }
 	windup = { min = 1 max = 15 }
 	total_fire_time = 25
@@ -42,7 +118,6 @@ weapon_component_template = {
 	missile_armor = 0
 	missile_shield = 0
 	missile_retarget_range = 100
-	
 	prerequisites = { "tech_psi_missile_system" }
 	component_set = "PSI_MISSILE_SYSTEM"
 	projectile_gfx = "psi_missiles"
@@ -51,6 +126,7 @@ weapon_component_template = {
 	ai_tag_weight = 0
 }
 
+#	Shadow Strike Craft
 strike_craft_component_template = {
 	key = "SHADOW_STRIKE_CRAFT"
 	size = LARGE
@@ -66,35 +142,27 @@ strike_craft_component_template = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
-	}
-		
+	}		
 	count = 10
 	regeneration_per_day = 0.15
-	launch_time = 1.5
-	
+	launch_time = 1.5	
 	damage = { min = 7 max = 14 }
 	cooldown = 2.0
 	range = 10
 	accuracy = 1.0
-	tracking = 0.70
-	
+	tracking = 0.70	
 	health = 55
 	armor = 0
 	shield = 35
-	evasion = 0.9
-	
+	evasion = 0.9	
 	speed = 450
 	rotation_speed = 0.1
-	acceleration = 0.5
-	
+	acceleration = 0.5	
 	shield_penetration = 1
-	armor_damage = 1.50
-	
-	ship_behavior = "bombers_behavior"
-	
+	armor_damage = 1.50	
+	ship_behavior = "bombers_behavior"	
 	weapon_type = instant
-	projectile_gfx = "techno_scout_laser_1"
-	
+	projectile_gfx = "techno_scout_laser_1"	
 	icon = "GFX_ship_part_shadow_strike_craft"
 	icon_frame = 1
 	component_set = "SHADOW_STRIKE_CRAFT"
@@ -102,61 +170,14 @@ strike_craft_component_template = {
 	tags = { weapon_type_strike_craft }
 }
 
-#Hellfire Autocannon
-
-weapon_component_template = {
-	key = "HELLFIRE_AUTOCANNONS"
-	size = large
-	entity = "large_kinetic_gun_entity"
-	type = instant
-	
-	icon = "GFX_ship_part_hellfire_autocannons"
-	icon_frame = 1
-	
-	damage = { min = 177 max = 534 }
-	windup = { min = 5 max = 10 }
-	total_fire_time = 10
-	range = 60.0
-	accuracy = 0.8
-	hull_damage = 1.25
-	shield_damage = 2
-	shield_penetration = 0
-	armor_penetration = 0
-	armor_damage = 0.25
-	tracking = 0.05
-	power = -120
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @l_t7_cost
-			rare_crystals = @l_t7_rare
-		}		
-		upkeep = {
-			energy = @l_t7_upkeep_energy
-			alloys = @l_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_hellfire_autocannons" }
-	component_set = "HELLFIRE_AUTOCANNONS"
-	projectile_gfx = "hellfire_autocannons"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_anti_shield }
-	ai_tag_weight = 0
-}
-
-# Terror Cannon
-
+#	Terror Cannon
 weapon_component_template = {
 	type = instant
-	
 	key = "TERROR_CANNON"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	
 	icon = "GFX_ship_part_terror_cannon"
-	icon_frame = 1
-	
+	icon_frame = 1	
 	damage = { min = 133 max = 440 }
 	windup = { min = 1 max = 18 }
 	total_fire_time = 25
@@ -180,7 +201,6 @@ weapon_component_template = {
 			alloys = @l_t7_upkeep_alloys
 		}
 	}
-	
 	prerequisites = { "tech_terror_cannon" }
 	component_set = "TERROR_CANNON"
 	projectile_gfx = "terror_cannon"
@@ -188,71 +208,23 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_shield }
 }
 
-# Ion Disruptor
+############################
+####	Energy Lance	####
+############################
 
-weapon_component_template = {
-	key = "ION_DISRUPTOR"
-	size = large
-	entity = "large_laser_gun_entity"
-	type = instant
-	
-	icon = "GFX_ship_part_ion_disruptor"
-	icon_frame = 1
-	
-	damage = { min = 1 max = 500 }
-	windup = { min = 2 max = 20 }
-	total_fire_time = 30
-	range = 80.0
-	accuracy = 1
-	hull_damage = 1
-	shield_damage = 1
-	shield_penetration = 1
-	armor_damage = 1
-	armor_penetration = 1
-	tracking = 0.05
-	power = -120
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @l_t7_cost
-			rare_crystals = @l_t7_rare
-		}		
-		upkeep = {
-			energy = @l_t7_upkeep_energy
-			alloys = @l_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_ion_disruptor" }
-	component_set = "ION_DISRUPTOR"
-	projectile_gfx = "ion_disruptor_l"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
-	ai_tag_weight = 5
-}
-
-
-# ####################
-#  Energy Lance
-# ####################
-
-# ## Compact Omni Lance
-
+#	Compact Omni Lance
 weapon_component_template = {
 	key = "COMPACT_OMNI_LANCE"
 	size = large
 	entity = "large_laser_gun_entity"
-	type = instant
-	
+	type = instant	
 	icon = "GFX_ship_part_omni_lance"
 	icon_frame = 1
-	
 	static_rotation = yes
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = yes
 	use_ship_kill_target = no
-
 	damage = { min = 320 max = 800 }
 	windup = { min = 1 max = 19 }
 	total_fire_time = 60
@@ -273,33 +245,27 @@ weapon_component_template = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_compact_omni_lance" }
 	component_set = "COMPACT_OMNI_LANCE"
 	projectile_gfx = "compact_omni_lance"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
-
 }
 
-# ## Omni Lance
-
+#	Omni Lance
 weapon_component_template = {
 	key = "OMNI_LANCE"
 	size = extra_large
 	entity = "invisible_turret_entity"
-	type = instant
-	
+	type = instant	
 	icon = "GFX_ship_part_omni_lance"
-	icon_frame = 1
-	
+	icon_frame = 1	
 	static_rotation = yes
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = yes
 	use_ship_kill_target = no
-
 	damage = { min = 800 max = 2000 }
 	windup = { min = 1 max = 19 }
 	total_fire_time = 60
@@ -320,38 +286,32 @@ weapon_component_template = {
 			energy = @xl_t7_upkeep_energy
 			alloys = @xl_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_omni_lance" }
 	component_set = "OMNI_LANCE"
 	projectile_gfx = "omni_lance"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
-
 }
 
-####################
-# Arc Emitter
-####################
+########################
+####	Arc Emitter	####
+########################
 
-# ## Compact Omni Emitter
-
+#	Compact Omni Emitter
 weapon_component_template = {
 	key = "COMPACT_OMNI_EMITTER"
 	size = large
 	entity = "large_laser_gun_entity"
-	type = instant
-	
+	type = instant	
 	icon = "GFX_ship_part_omni_emitter"
-	icon_frame = 1
-	
+	icon_frame = 1	
 	static_rotation = yes
 	firing_arc = 35.0
 	min_range = 10.0
 	static_rotation = yes
 	use_ship_kill_target = no
-
 	damage = { min = 1 max = 680 }
 	windup = { min = 1 max = 19 }
 	total_fire_time = 61
@@ -374,129 +334,26 @@ weapon_component_template = {
 			alloys = @l_t7_upkeep_alloys
 		}
 	}
-	
 	prerequisites = { "tech_compact_omni_emitter" }
 	component_set = "COMPACT_OMNI_EMITTER"
 	projectile_gfx = "compact_omni_emitter"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_hull }
-
 }
 
-# ## Omni Emitter
-
-weapon_component_template = {
-	key = "OMNI_EMITTER"
-	size = extra_large
-	entity = "invisible_turret_entity"
-	type = instant
-	
-	icon = "GFX_ship_part_omni_emitter"
-	icon_frame = 1
-	
-	static_rotation = yes
-	firing_arc = 35.0
-	min_range = 10.0
-	static_rotation = yes
-	use_ship_kill_target = no
-
-	damage = { min = 1 max = 1700 }
-	windup = { min = 1 max = 19 }
-	total_fire_time = 61
-	range = 180.0
-	hull_damage = 1
-	shield_damage = 1
-	shield_penetration = 1
-	armor_damage = 1
-	armor_penetration = 1
-	tracking = 0
-	power = -300
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @xl_t7_cost
-			rare_crystals = @xl_t7_rare
-		}		
-		upkeep = {
-			energy = @xl_t7_upkeep_energy
-			alloys = @xl_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_omni_emitter" }
-	component_set = "OMNI_EMITTER"
-	projectile_gfx = "omni_emitter"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_artillery }
-	ai_tag_weight = 0
-
-}
-
-# Massive Autocannon
-
-weapon_component_template = {
-	key = "MASSIVE_AUTOCANNONS"
-	size = extra_large
-	entity = "invisible_turret_entity"
-	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_massive_autocannon"
-	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
-	static_rotation = yes
-	use_ship_kill_target = no
-
-	damage = { min = 442 max = 1336 }
-	windup = { min = 5 max = 10 }
-	total_fire_time = 10
-	range = 90.0
-	accuracy = 0.75
-	hull_damage = 1.25
-	shield_damage = 2
-	shield_penetration = 0
-	armor_penetration = 0
-	armor_damage = 0.25
-	tracking = 0
-	power = -300
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @xl_t7_cost
-			rare_crystals = @xl_t7_rare
-		}		
-		upkeep = {
-			energy = @xl_t7_upkeep_energy
-			alloys = @xl_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_massive_autocannons" }
-	component_set = "MASSIVE_AUTOCANNONS"
-	projectile_gfx = "massive_autocannons"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_anti_shield }
-	
-}
-
-# ## Compact Omni Cannon
+#	Compact Omni Cannon
 weapon_component_template = {
 	key = "COMPACT_OMNI_CANNON"
 	size = large
 	entity = "large_kinetic_gun_entity"
 	type = instant
-	prio_projectile = yes
-	
+	prio_projectile = yes	
 	icon = "GFX_ship_part_omni_cannon"
-	icon_frame = 1
-	
+	icon_frame = 1	
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = yes
 	use_ship_kill_target = no
-
 	damage = { min = 360 max = 1040 }
 	windup = { min = 1 max = 19 }
 	total_fire_time = 70
@@ -519,224 +376,28 @@ weapon_component_template = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_compact_omni_cannon" }
 	component_set = "COMPACT_OMNI_CANNON"
 	projectile_gfx = "compact_omni_cannon"
 	tags = { weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_shield }
 	ai_tag_weight = 0
-
 }
 
-# ## Omni Cannon
-weapon_component_template = {
-	key = "OMNI_CANNON"
-	size = extra_large
-	entity = "large_kinetic_gun_entity"
-	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_omni_cannon"
-	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
-	static_rotation = yes
-	use_ship_kill_target = no
-
-	damage = { min = 900 max = 2600 }
-	windup = { min = 1 max = 19 }
-	total_fire_time = 70
-	range = 180.0
-	accuracy = 0.75
-	hull_damage = 1.25
-	shield_damage = 1.5
-	shield_penetration = 0
-	armor_damage = 0.75
-	armor_penetration = 0
-	tracking = 0
-	power = -300
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @xl_t7_cost
-			rare_crystals = @xl_t7_rare
-		}		
-		upkeep = {
-			energy = @xl_t7_upkeep_energy
-			alloys = @xl_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_omni_cannon" }
-	component_set = "OMNI_CANNON"
-	projectile_gfx = "omni_cannon"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_artillery }
-	ai_tag_weight = 0
-
-}
-
-##Portal Generator
-
-weapon_component_template = {
-	key = "PORTAL_GENERATOR"
-	size = titanic
-	entity = "invisible_turret_entity"
-	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_portal_generator"
-	icon_frame = 1
-	
-	use_ship_kill_target = yes
-	
-	damage = { min = 642 max = 830 }
-	windup = { min = 2 max = 10 }
-	total_fire_time = 15
-	range = 300.0
-	accuracy = 0.85
-	hull_damage = 1.0
-	shield_damage = 0.5
-	armor_damage = 1.0
-	armor_penetration = 1.0
-	tracking = 0
-	power = -500
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titanic_t7_cost
-			rare_crystals = @titanic_t7_rare
-		}		
-		upkeep = {
-			energy = @titanic_t7_upkeep_energy
-			alloys = @titanic_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_portal_generator" }
-	component_set = "PORTAL_GENERATOR"
-	projectile_gfx = "dimensional_horror_spike_weapon"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_artillery }
-	ai_tag_weight = 0
-	
-}
-
-# ## Dragon Breath
-weapon_component_template = {
-	key = "DRAGON_BREATH"
-	size = titanic
-	entity = "invisible_turret_entity"
-	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_dragon_breath"
-	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
-	static_rotation = yes
-	use_ship_kill_target = no
-
-	damage = { min = 4948 max = 12123 }
-	windup = { min = 30 max = 45 }
-	total_fire_time = 180
-	range = 150.0
-	accuracy = 0.85
-	hull_damage = 2.0
-	shield_damage = 0.75
-	armor_penetration = 2.0
-	tracking = 0
-	power = -500
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titanic_t7_cost
-			rare_crystals = @titanic_t7_rare
-		}		
-		upkeep = {
-			energy = @titanic_t7_upkeep_energy
-			alloys = @titanic_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_dragon_breath" }
-	component_set = "DRAGON_BREATH"
-	projectile_gfx = "dragon_weapon"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_artillery }
-	
-	ai_tag_weight = 0
-}
-
-#Stellarite Weapon
-
-weapon_component_template = {
-	key = "STELLARITE_WEAPON"
-	size = titanic
-	entity = "invisible_turret_entity"
-	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_stellarite_weapon"
-	icon_frame = 1
-
-	firing_arc = 25.0
-	min_range = 10.0
-	static_rotation = no
-	use_ship_kill_target = no
-
-	damage = { min = 4948 max = 12123 }
-	windup = { min = 1 max = 19 }
-	total_fire_time = 70
-	range = 100.0
-	accuracy = 0.85
-	hull_damage = 2.0
-	shield_damage = 0.75
-	armor_penetration = 2.0
-	tracking = 0
-	power = -500
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titanic_t7_cost
-			rare_crystals = @titanic_t7_rare
-		}		
-		upkeep = {
-			energy = @titanic_t7_upkeep_energy
-			alloys = @titanic_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_stellarite_weapon" }
-	component_set = "STELLARITE_WEAPON"
-	projectile_gfx = "stellarite_weapon"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_artillery }
-
-	ai_tag_weight = 0
-}
-
-#Dimensional Weapon
-
+#	Dimensional Weapon
 weapon_component_template = {
 	key = "DIMENSIONAL_WEAPON"
 	size = titanic
 	entity = "invisible_turret_entity"
 	type = instant
-	prio_projectile = yes
-	
+	prio_projectile = yes	
 	icon = "GFX_ship_part_dimensional_weapon"
 	icon_frame = 1
-
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = no
 	use_ship_kill_target = no
-
 	damage = { min = 1000 max = 10000 }
 	windup = { min = 20 max = 30 }
 	total_fire_time = 150
@@ -757,42 +418,36 @@ weapon_component_template = {
 			energy = @titanic_t7_upkeep_energy
 			alloys = @titanic_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_dimensional_weapon" }
 	component_set = "DIMENSIONAL_WEAPON"
 	projectile_gfx = "dimensional_weapon"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
-
 	ai_tag_weight = 0
 }
 
-#Scrapper Weapon
-
+#	Dragon Breath
 weapon_component_template = {
-	key = "SCRAPPER_WEAPON"
+	key = "DRAGON_BREATH"
 	size = titanic
 	entity = "invisible_turret_entity"
 	type = instant
-	prio_projectile = yes
-	
-	icon = "GFX_ship_part_scrapper_weapon"
-	icon_frame = 1
-	
+	prio_projectile = yes	
+	icon = "GFX_ship_part_dragon_breath"
+	icon_frame = 1	
 	firing_arc = 25.0
 	min_range = 10.0
-	static_rotation = no
+	static_rotation = yes
 	use_ship_kill_target = no
-	
-	damage = { min = 5000 max = 10000 }
+	damage = { min = 4948 max = 12123 }
 	windup = { min = 30 max = 45 }
 	total_fire_time = 180
 	range = 150.0
 	accuracy = 0.85
 	hull_damage = 2.0
-	shield_damage = 2.0
-	armor_damage = 0.8
+	shield_damage = 0.75
+	armor_penetration = 2.0
 	tracking = 0
 	power = -500
 	resources = {
@@ -805,34 +460,28 @@ weapon_component_template = {
 			energy = @titanic_t7_upkeep_energy
 			alloys = @titanic_t7_upkeep_alloys
 		}
-	}
-	
-	prerequisites = { "tech_scrapper_weapon" }
-	component_set = "SCRAPPER_WEAPON"
-	projectile_gfx = "scavenger_bot_main_weapon"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_artillery }
-	
+	}	
+	prerequisites = { "tech_dragon_breath" }
+	component_set = "DRAGON_BREATH"
+	projectile_gfx = "dragon_weapon"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }	
 	ai_tag_weight = 0
 }
 
-#Elder Tiyanki Weapon
-
+#	Elder Tiyanki Weapon
 weapon_component_template = {
 	key = "ELDER_TIYANKI_WEAPON"
 	size = titanic
 	entity = "invisible_turret_entity"
 	type = instant
-	prio_projectile = yes
-	
+	prio_projectile = yes	
 	icon = "GFX_ship_part_elder_tiyanki_weapon"
 	icon_frame = 1
-
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = no
 	use_ship_kill_target = no
-
 	damage = { min = 4948 max = 12123 }
 	windup = { min = 30 max = 45 }
 	total_fire_time = 180
@@ -854,34 +503,28 @@ weapon_component_template = {
 			energy = @titanic_t7_upkeep_energy
 			alloys = @titanic_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_elder_tiyanki_weapon" }
 	component_set = "ELDER_TIYANKI_WEAPON"
 	projectile_gfx = "elder_tiyanki_weapon"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
-
 	ai_tag_weight = 0
 }
 
-#Gray Goo Beam
-
+#	Gray Goo Beam
 weapon_component_template = {
 	key = "GRAY_GOO_BEAM"
 	size = titanic
 	entity = "invisible_turret_entity"
 	type = instant
-	prio_projectile = yes
-	
+	prio_projectile = yes	
 	icon = "GFX_ship_part_gray_goo_beam"
 	icon_frame = 1
-
 	firing_arc = 25.0
 	min_range = 10.0
 	static_rotation = no
 	use_ship_kill_target = no
-
 	damage = { min = 1 max = 9999 }
 	windup = { min = 2 max = 20 }
 	total_fire_time = 115
@@ -904,24 +547,320 @@ weapon_component_template = {
 			energy = @titanic_t7_upkeep_energy
 			alloys = @titanic_t7_upkeep_alloys
 		}
-	}
-	
+	}	
 	prerequisites = { "tech_gray_goo_beam" }
 	component_set = "GRAY_GOO_BEAM"
 	projectile_gfx = "gatebuilder_titan_weapon"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
-
 	ai_tag_weight = 0
 }
 
+#	Massive Autocannon
+weapon_component_template = {
+	key = "MASSIVE_AUTOCANNONS"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	prio_projectile = yes	
+	icon = "GFX_ship_part_massive_autocannon"
+	icon_frame = 1	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	damage = { min = 442 max = 1336 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 10
+	range = 90.0
+	accuracy = 0.75
+	hull_damage = 1.25
+	shield_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	armor_damage = 0.25
+	tracking = 0
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			rare_crystals = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_massive_autocannons" }
+	component_set = "MASSIVE_AUTOCANNONS"
+	projectile_gfx = "massive_autocannons"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }	
+}
 
+#	Omni Cannon
+weapon_component_template = {
+	key = "OMNI_CANNON"
+	size = extra_large
+	entity = "large_kinetic_gun_entity"
+	type = instant
+	prio_projectile = yes	
+	icon = "GFX_ship_part_omni_cannon"
+	icon_frame = 1	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	damage = { min = 900 max = 2600 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 70
+	range = 180.0
+	accuracy = 0.75
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0
+	armor_damage = 0.75
+	armor_penetration = 0
+	tracking = 0
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			rare_crystals = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_omni_cannon" }
+	component_set = "OMNI_CANNON"
+	projectile_gfx = "omni_cannon"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+}
 
-# ####################
-#  Shields
-# ####################
+#	Omni Emitter
+weapon_component_template = {
+	key = "OMNI_EMITTER"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant	
+	icon = "GFX_ship_part_omni_emitter"
+	icon_frame = 1	
+	static_rotation = yes
+	firing_arc = 35.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	damage = { min = 1 max = 1700 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 61
+	range = 180.0
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1
+	armor_penetration = 1
+	tracking = 0
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			rare_crystals = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_omni_emitter" }
+	component_set = "OMNI_EMITTER"
+	projectile_gfx = "omni_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+}
 
+#	Portal Generator
+weapon_component_template = {
+	key = "PORTAL_GENERATOR"
+	size = titanic
+	entity = "invisible_turret_entity"
+	type = instant
+	prio_projectile = yes	
+	icon = "GFX_ship_part_portal_generator"
+	icon_frame = 1	
+	use_ship_kill_target = yes	
+	damage = { min = 642 max = 830 }
+	windup = { min = 2 max = 10 }
+	total_fire_time = 15
+	range = 300.0
+	accuracy = 0.85
+	hull_damage = 1.0
+	shield_damage = 0.5
+	armor_damage = 1.0
+	armor_penetration = 1.0
+	tracking = 0
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t7_cost
+			rare_crystals = @titanic_t7_rare
+		}		
+		upkeep = {
+			energy = @titanic_t7_upkeep_energy
+			alloys = @titanic_t7_upkeep_alloys
+		}
+	}
+	prerequisites = { "tech_portal_generator" }
+	component_set = "PORTAL_GENERATOR"
+	projectile_gfx = "dimensional_horror_spike_weapon"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0	
+}
 
+#	Scrapper Weapon
+weapon_component_template = {
+	key = "SCRAPPER_WEAPON"
+	size = titanic
+	entity = "invisible_turret_entity"
+	type = instant
+	prio_projectile = yes	
+	icon = "GFX_ship_part_scrapper_weapon"
+	icon_frame = 1	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = no
+	use_ship_kill_target = no	
+	damage = { min = 5000 max = 10000 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 180
+	range = 150.0
+	accuracy = 0.85
+	hull_damage = 2.0
+	shield_damage = 2.0
+	armor_damage = 0.8
+	tracking = 0
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t7_cost
+			rare_crystals = @titanic_t7_rare
+		}		
+		upkeep = {
+			energy = @titanic_t7_upkeep_energy
+			alloys = @titanic_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_scrapper_weapon" }
+	component_set = "SCRAPPER_WEAPON"
+	projectile_gfx = "scavenger_bot_main_weapon"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }	
+	ai_tag_weight = 0
+}
+
+#	Stellarite Weapon
+weapon_component_template = {
+	key = "STELLARITE_WEAPON"
+	size = titanic
+	entity = "invisible_turret_entity"
+	type = instant
+	prio_projectile = yes	
+	icon = "GFX_ship_part_stellarite_weapon"
+	icon_frame = 1
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = no
+	use_ship_kill_target = no
+	damage = { min = 4948 max = 12123 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 70
+	range = 100.0
+	accuracy = 0.85
+	hull_damage = 2.0
+	shield_damage = 0.75
+	armor_penetration = 2.0
+	tracking = 0
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t7_cost
+			rare_crystals = @titanic_t7_rare
+		}		
+		upkeep = {
+			energy = @titanic_t7_upkeep_energy
+			alloys = @titanic_t7_upkeep_alloys
+		}
+	}	
+	prerequisites = { "tech_stellarite_weapon" }
+	component_set = "STELLARITE_WEAPON"
+	projectile_gfx = "stellarite_weapon"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+}
+
+#####################
+#####	Shields	#####
+#####################
+
+#	Large Dark Energy Shield
+utility_component_template = {
+	key = "LARGE_DARK_ENERGY_SHIELD"
+	size = large
+	icon = "GFX_ship_part_dark_energy_shield"
+	icon_frame = 1
+	power = -378
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_l_t7_cost }		
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = 1500
+		ship_shield_regen_add_static = 15 
+	}
+	prerequisites = { "tech_dark_energy_shield" }
+	component_set = "DARK_ENERGY_SHIELD"
+}
+
+#	Large Psi Deflector
+utility_component_template = {
+	key = "LARGE_psi_deflector"
+	size = large
+	icon = "GFX_ship_part_psi_shield"
+	icon_frame = 1
+	power = -378
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_l_t7_cost }		
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = 1500
+		ship_shield_regen_add_static = 15 
+	}
+	prerequisites = { "tech_psi_deflector" }
+	component_set = "psi_deflector"
+}
+
+#	Medium Dark Energy Shield
 utility_component_template = {
 	key = "MEDIUM_DARK_ENERGY_SHIELD"
 	size = medium
@@ -930,9 +869,7 @@ utility_component_template = {
 	power = -150
 	resources = {
 		category = ship_components
-		cost = {
-			alloys = @shield_m_t7_cost
-		}		
+		cost = { alloys = @shield_m_t7_cost }		
 		upkeep = {
 			energy = @shield_m_t7_upkeep_energy
 			alloys = @shield_m_t7_upkeep_alloys
@@ -946,30 +883,7 @@ utility_component_template = {
 	component_set = "DARK_ENERGY_SHIELD"
 }
 
-utility_component_template = {
-	key = "LARGE_DARK_ENERGY_SHIELD"
-	size = large
-	icon = "GFX_ship_part_dark_energy_shield"
-	icon_frame = 1
-	power = -378
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @shield_l_t7_cost
-		}		
-		upkeep = {
-			energy = @shield_l_t7_upkeep_energy
-			alloys = @shield_l_t7_upkeep_alloys
-		}
-	}
-	modifier = {
-		ship_shield_add = 1500
-		ship_shield_regen_add_static = 15 
-	}
-	prerequisites = { "tech_dark_energy_shield" }
-	component_set = "DARK_ENERGY_SHIELD"
-}
-
+#	Medium Psi Deflector
 utility_component_template = {
 	key = "MEDIUM_psi_deflector"
 	size = medium
@@ -978,9 +892,7 @@ utility_component_template = {
 	power = -150
 	resources = {
 		category = ship_components
-		cost = {
-			alloys = @shield_m_t7_cost
-		}		
+		cost = { alloys = @shield_m_t7_cost }		
 		upkeep = {
 			energy = @shield_m_t7_upkeep_energy
 			alloys = @shield_m_t7_upkeep_alloys
@@ -994,59 +906,11 @@ utility_component_template = {
 	component_set = "psi_deflector"
 }
 
-utility_component_template = {
-	key = "LARGE_psi_deflector"
-	size = large
-	icon = "GFX_ship_part_psi_shield"
-	icon_frame = 1
-	power = -378
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @shield_l_t7_cost
-		}		
-		upkeep = {
-			energy = @shield_l_t7_upkeep_energy
-			alloys = @shield_l_t7_upkeep_alloys
-		}
-	}
-	modifier = {
-		ship_shield_add = 1500
-		ship_shield_regen_add_static = 15 
-	}
-	prerequisites = { "tech_psi_deflector" }
-	component_set = "psi_deflector"
-}
+#####################
+#####	Armor	#####
+#####################
 
-# ####################
-#  Armor
-# ####################
-
-utility_component_template = {
-	key = "MEDIUM_DARK_MATTER_PLATING"
-	size = medium
-	icon = "GFX_ship_part_dark_matter_plating"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @m_t7_cost
-		}		
-		upkeep = {
-			energy = @m_t7_upkeep_energy
-			alloys = @m_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_dark_matter_plating" }
-	component_set = "DARK_MATTER_PLATING"
-	
-	modifier = {
-		ship_hull_add = 552
-	}
-}
-
+#	Large Dark Matter Plating
 utility_component_template = {
 	key = "LARGE_DARK_MATTER_PLATING"
 	size = large
@@ -1055,47 +919,18 @@ utility_component_template = {
 	power = 0
 	resources = {
 		category = ship_components
-		cost = {
-			alloys = @l_t7_cost
-		}		
+		cost = { alloys = @l_t7_cost }		
 		upkeep = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
 	}
-	
 	prerequisites = { "tech_dark_matter_plating" }
 	component_set = "DARK_MATTER_PLATING"
-	
-	modifier = {
-		ship_hull_add = 1380
-	}
+	modifier = { ship_hull_add = 1380 }
 }
 
-utility_component_template = {
-	key = "MEDIUM_IMPROVED_DRAGON_ARMOR"
-	size = medium
-	icon = "GFX_ship_part_improved_dragon_armor"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @m_t7_cost
-		}		
-		upkeep = {
-			energy = @m_t7_upkeep_energy
-			alloys = @m_t7_upkeep_alloys
-		}
-	}
-	modifier = {
-		ship_armor_add = 552
-	}
-	
-	prerequisites = { "tech_improved_dragon_armor" }
-	component_set = "IMPROVED_DRAGON_ARMOR"
-}
-
+#	Large Improved Dragon Armor
 utility_component_template = {
 	key = "LARGE_IMPROVED_DRAGON_ARMOR"
 	size = large
@@ -1104,47 +939,18 @@ utility_component_template = {
 	power = 0
 	resources = {
 		category = ship_components
-		cost = {
-			alloys = @l_t7_cost
-		}		
+		cost = { alloys = @l_t7_cost }		
 		upkeep = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
 	}
-	modifier = {
-		ship_armor_add = 1380
-	}
-	
+	modifier = { ship_armor_add = 1380 }
 	prerequisites = { "tech_improved_dragon_armor" }
 	component_set = "IMPROVED_DRAGON_ARMOR"
 }
 
-utility_component_template = {
-	key = "MEDIUM_TITAN_ARMOR"
-	size = medium
-	icon = "GFX_ship_part_titan_armor"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @m_t7_cost
-		}		
-		upkeep = {
-			energy = @m_t7_upkeep_energy
-			alloys = @m_t7_upkeep_alloys
-		}
-	}
-	
-	prerequisites = { "tech_titan_armor" }
-	component_set = "TITAN_ARMOR"
-	
-	modifier = {
-		ship_armor_add = 552
-	}	
-}
-
+#	Large Titan Armor
 utility_component_template = {
 	key = "LARGE_TITAN_ARMOR"
 	size = large
@@ -1153,19 +959,73 @@ utility_component_template = {
 	power = 0
 	resources = {
 		category = ship_components
-		cost = {
-			alloys = @l_t7_cost
-		}		
+		cost = { alloys = @l_t7_cost }		
 		upkeep = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
 	}
-	
 	prerequisites = { "tech_titan_armor" }
 	component_set = "TITAN_ARMOR"
-	
-	modifier = {
-		ship_armor_add = 1380
-	}	
+	modifier = { ship_armor_add = 1380 }	
+}
+
+#	Medium Dark Matter Plating
+utility_component_template = {
+	key = "MEDIUM_DARK_MATTER_PLATING"
+	size = medium
+	icon = "GFX_ship_part_dark_matter_plating"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t7_cost }		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	prerequisites = { "tech_dark_matter_plating" }
+	component_set = "DARK_MATTER_PLATING"
+	modifier = { ship_hull_add = 552 }
+}
+
+#	Medium Improved Dragon Armor
+utility_component_template = {
+	key = "MEDIUM_IMPROVED_DRAGON_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_improved_dragon_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t7_cost }		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	modifier = { ship_armor_add = 552 }
+	prerequisites = { "tech_improved_dragon_armor" }
+	component_set = "IMPROVED_DRAGON_ARMOR"
+}
+
+#	Medium Titan Armor
+utility_component_template = {
+	key = "MEDIUM_TITAN_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_titan_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t7_cost }		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	prerequisites = { "tech_titan_armor" }
+	component_set = "TITAN_ARMOR"
+	modifier = { ship_armor_add = 552 }	
 }

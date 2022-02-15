@@ -31,9 +31,7 @@ decision_youth_indoctrination = {
 		}
 	}
 	
-	ai_weight = {
-		weight = 0
-	}	
+	ai_weight = { weight = 0 }
 }
 
 decision_volunteer_conscription = {
@@ -65,7 +63,5 @@ decision_volunteer_conscription = {
 		}
 	}
 	
-	ai_weight = {
-		weight = 0
-	}	
+	ai_weight = { weight = 0 }
 }

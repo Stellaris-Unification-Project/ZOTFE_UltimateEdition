@@ -3,10 +3,8 @@
 
 district_generator = {
 	base_buildtime = 240
-
-	min_for_deposits_on_planet = 3	
+	min_for_deposits_on_planet = 3
 	max_for_deposits_on_planet = 15
-	
 	show_on_uncolonized = {
 		habitable_structure = no
 		NOR = {
@@ -16,7 +14,6 @@ district_generator = {
 			is_planet_class = pc_ringworld_habitable
 		}
 	}
-	
 	potential = {
 		habitable_structure = no
 		NOR = {
@@ -27,16 +24,13 @@ district_generator = {
 			has_modifier = pm_Utopian_Paradise
 		}
 	}
-	
 	allow = {
 		NOT = { has_modifier = resort_colony }
 	}
-	
 	conversion_ratio = 1
 	convert_to = {
 		district_generator_uncapped
-	}	
-	
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -44,25 +38,22 @@ district_generator = {
 		}
 		upkeep = {
 			energy = 1
-		}		
-	}	
-	
+		}
+	}
 	planet_modifier = {
 		planet_housing_add = 2
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				has_valid_civic = civic_agrarian_idyll
 			}
 		}
 		modifier = {
 			planet_housing_add = 1
 		}
-	}	
-		
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -72,7 +63,6 @@ district_generator = {
 			job_technician_drone_add = 3
 		}
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -81,12 +71,11 @@ district_generator = {
 		modifier = {
 			job_technician_drone_add = 2
 		}
-	}	
-		
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
@@ -105,7 +94,6 @@ district_generator = {
 			job_fe_acolyte_generator_add = 2
 		}
 	}
-	
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -116,7 +104,7 @@ district_generator = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
 			}
@@ -130,11 +118,9 @@ district_generator = {
 		}
 		text = job_fe_acolyte_generator_effect_desc
 	}
-	
 	prerequisites = {
 		tech_power_plant_1
 	}
-	
 	ai_weight = {
 		weight = 0
 		modifier = {

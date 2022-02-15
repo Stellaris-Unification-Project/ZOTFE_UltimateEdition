@@ -103,7 +103,6 @@ wg_total_annihilation = {
 					}	
 				}
 			}
-			
 			root = {
 				save_event_target_as = Annihilator
 				remove_country_flag = ae_crusader
